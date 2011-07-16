@@ -30,16 +30,13 @@ class Page_Controller extends ContentController {
 
 	public function init() {
 		parent::init();
-	}
-	
-	public function testSL() {
-		$api = SiteConfig::current_site_config()->SLApiKey;
-		$sl = new SunlightLegislator();
-		$sl->api_key = $api;
-		
-		$leg = $sl->legislatorZipCode(53582);
-		$json = json_encode($leg);
-		
-		return array("Content" => $json);
+		// If the site cookie isn't set, set it.
+//		if(!Cookie::get('btdc')) {
+////			$ua = $_SERVER['HTTP_USER_AGENT'];
+////			$ra = $_SERVER['REMOTE_ADDR'];
+////			$sig = sha1($ua.$ra);
+//			$loc = SLCongressController::sloc();
+//			Cookie::set("btdc", $loc);
+//		}
 	}
 }

@@ -103,11 +103,11 @@
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-
+  <% require javascript(congressapi/javascript/json2.js) %>
+  <% require javascript(congressapi/javascript/sl-congress-api.js) %>
+  <% require javascript(themes/debtceiling/js/jquery.cookie.js) %>
   <!-- scripts concatenated and minified via ant build script-->
-  <script src="$ThemeDir/js/plugins.js"></script>
-  <script src="$ThemeDir/js/script.js"></script>
-	<% require javascript(congressapi/javascript/sl-congress-api.js) %>
+  <% require javascript(themes/debtceiling/js/script.js) %>
   <!-- end scripts-->
 
 

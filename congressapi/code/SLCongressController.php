@@ -18,7 +18,7 @@ class SLCongressController extends ContentController {
 	 */
 	public static $allowed_actions = array (
 		'zip',
-		'getLocation'
+		'loc'
 	);
 	
 	/**
@@ -26,11 +26,23 @@ class SLCongressController extends ContentController {
 	 * 
 	 * @return SunlightLegislator
 	 */
-	protected function _connect() {
+	protected function _connectSL() {
 		$api = SiteConfig::current_site_config()->SLApiKey;
 		$sl = new SunlightLegislator();
 		$sl->api_key = $api;
 		return $sl;
+	}
+	
+	/**
+	 * Return a query-able IPInfo object
+	 * 
+	 * @return ip2location_lite
+	 */
+	protected function _connectIP() {
+		$api = SiteConfig::current_site_config()->IPInfoKey;
+		$ipLite = new ip2location_lite();
+		$ipLite->setKey($api);
+		return $ipLite;
 	}
 	
 	/**
@@ -47,13 +59,21 @@ class SLCongressController extends ContentController {
 	 *
 	 * @return Location
 	 */
-	public function getLocation() {
-		 $locator = new Locator();
-//		 $ip = $this->ip();
-		 $ip = Director::urlParam('Query');
-		 $location = $locator->getGeoLocation($ip);
-		 Debug::dump($location);
-//		 return $location;
+	public function loc() {
+		$ipInfo = $this->_connectIP();
+		if(Director::urlParam('Query')) {
+			$ip = Director::urlParam('Query');
+		} else {
+			$ip = $this->ip();
+		}
+		$location = $ipInfo->getCity($ip);
+		if($location['countryCode'] != "US") {
+			$location['success'] = 0;
+		} else {
+			$location['success'] = 1;
+		}
+		$json = json_encode($location);
+		return $json;
 	}
 	
 	protected function getZipCode() {
