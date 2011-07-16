@@ -38,7 +38,8 @@
 
   <div id="container">
     <header>
-
+			<img id="logo" />
+			<h1>Beyond the Debt Ceiling</h1>
     </header>
     <div id="main" role="main">
 			$Layout
