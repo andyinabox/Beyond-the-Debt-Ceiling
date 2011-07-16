@@ -41,6 +41,11 @@ class SLCongressController extends ContentController {
 		$sl = $this->_connect();
 		if($zip = Director::urlParam('Query')) {
 			$leg = $sl->legislatorZipCode($zip);
+			if(count((array)$leg)) {
+				$leg->success = 1;
+			} else {
+				$leg->success = 0;
+			}
 			$json = json_encode($leg);
 			return $json;
 		}
