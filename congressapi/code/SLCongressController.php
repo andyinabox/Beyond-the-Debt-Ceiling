@@ -17,7 +17,8 @@ class SLCongressController extends ContentController {
 	 * @var array
 	 */
 	public static $allowed_actions = array (
-		'zip'
+		'zip',
+		'getLocation'
 	);
 	
 	/**
@@ -30,6 +31,33 @@ class SLCongressController extends ContentController {
 		$sl = new SunlightLegislator();
 		$sl->api_key = $api;
 		return $sl;
+	}
+	
+	/**
+	 * Return the current user's IP address
+	 *
+	 * @return unknown
+	 */
+	protected function ip() {
+		return $_SERVER['REMOTE_ADDR'];
+	}
+	
+	/**
+	 * Return location php object.
+	 *
+	 * @return Location
+	 */
+	public function getLocation() {
+		 $locator = new Locator();
+//		 $ip = $this->ip();
+		 $ip = Director::urlParam('Query');
+		 $location = $locator->getGeoLocation($ip);
+		 Debug::dump($location);
+//		 return $location;
+	}
+	
+	protected function getZipCode() {
+		
 	}
 	
 	/**
