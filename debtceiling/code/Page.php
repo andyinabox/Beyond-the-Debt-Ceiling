@@ -38,4 +38,15 @@ class Page_Controller extends ContentController {
 		Requirements::themedCSS('typography'); 
 		Requirements::themedCSS('form'); 
 	}
+	
+	public function testSL() {
+		$api = SiteConfig::current_site_config()->SLApiKey;
+		$sl = new SunlightLegislator();
+		$sl->api_key = $api;
+		
+		$leg = $sl->legislatorZipCode(53582);
+		$json = json_encode($leg);
+		
+		return array("Content" => $json);
+	}
 }
