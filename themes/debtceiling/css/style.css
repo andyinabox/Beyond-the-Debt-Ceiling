@@ -182,7 +182,7 @@ body {
 #container {
 	text-align: left;
 	margin: 20px auto;
-	width: 720px;
+	width: 700px;
 }
 
 header {
@@ -190,6 +190,10 @@ header {
 }
 header h1 {
 	font-size: 40px;
+}
+header #intro-text {
+	margin: 20px 50px;
+	font-size: 18px;
 }
 
 #main {
@@ -202,7 +206,9 @@ header h1 {
 	border-radius: 15px;
 }
 
-
+div.section {
+	margin: 3em 0;
+}
 
 
 
