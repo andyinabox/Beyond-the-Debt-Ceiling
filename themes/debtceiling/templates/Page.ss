@@ -48,11 +48,11 @@
 			<div class="section clearfix" id="quiz">
 				<div id="quiz-question">
 					<h1>What <em>will</em> happen if the debt ceiling isn't raised?</h1>
-					<div id="quiz-illustration"><img src="" height="250px" width="200px"></div>
+					<div id="quiz-illustration"><img src="$ThemeDir/images/illustrations-question.png" height="250" width="200"></div>
 					<div id="quiz-answers">
 						<form>
 							<ul id="quiz-options">
-								<li><label for="quiz-option1"><input name="quiz-option" id="quiz-option1" value="1" type="radio"> Absolutely nothing.</label></li>
+								<li><input name="quiz-option" id="quiz-option1" value="1" type="radio"> <label for="quiz-option1">Absolutely nothing.</label></li>
 								<li><input name="quiz-option" id="quiz-option2"  value="2" type="radio"> <label for="quiz-option2">America will be back on the right track to fiscal responsibility.</label></li>
 							<li><input name="quiz-option" id="quiz-option3"  value="3" type="radio"> <label for="quiz-option3">Locusts, plagues, four horsemen, the whole drill.</label></li>
 							<li><input name="quiz-option" id="quiz-option4"  value="4" type="radio">	 <label for="quiz-option4">The U.S. will fall deeper into economic decline.</label></li>			
