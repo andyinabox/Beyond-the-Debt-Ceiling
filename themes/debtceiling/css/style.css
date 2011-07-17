@@ -173,9 +173,15 @@ h1 {
 	font-size: 200%;
 	font-weight: normal;
 }
-
 h1 em {
 	font-style: italic;
+}
+
+h2 {
+	font-family: 'IM Fell DW Pica', serif;
+	font-size: 150%;
+	font-weight: normal;
+	margin-bottom: .5em;
 }
 
 body {
@@ -229,6 +235,7 @@ div.section {
 	border-radius: 15px;
 	padding: 30px 50px;
 	background: #ccc url(../images/grey_paper.jpg);	
+	position: relative;
 }
 
 div.section#quiz {
@@ -261,7 +268,28 @@ div.section#quiz #quiz-answers li {
 
 #story div.section {
 	background: #7c94b8 url(../images/blue_paper.jpg);	
+}
+
+#do-something-about-it {
 	
+}
+
+
+
+#do-something-about-it #zip-form {
+	width: 150px;
+	position: absolute;
+	top: 20px;
+	right: 50px;
+}
+
+#do-something-about-it #zip-form input {
+	border: none;
+	width: 150px;
+	font-size: 30px;
+}
+#do-something-about-it #zip-form label {
+	font-size: 12px;
 }
 
 /*.jquery-checkbox {

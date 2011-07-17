@@ -40,6 +40,8 @@ var quiz = {
 }
 
 
+
+
 $(document).ready(function() {
 	dc.setup.init();
 	

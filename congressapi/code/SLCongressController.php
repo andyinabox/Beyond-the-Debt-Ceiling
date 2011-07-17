@@ -97,7 +97,7 @@ class SLCongressController extends ContentController {
 	 * @return JSON
 	 */
 	public function zip() {
-		$sl = $this->_connect();
+		$sl = $this->_connectSL();
 		if($zip = Director::urlParam('Query')) {
 			$leg = $sl->legislatorZipCode($zip);
 			if(count((array)$leg)) {

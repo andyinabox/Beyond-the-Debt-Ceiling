@@ -100,12 +100,14 @@
 			</div>
 			<div class="section clearfix" id="do-something-about-it">
 				<div id="contact">
-					<h2>Contact your representatives</h2>
+					<div id="zip-form">
+						<form>
+							<input type="text" value="zipcode" id="zip" name="zip">
+							<label for="zip">Enter your zip code here.</label>
+						</form>
+					</div>
+					<h1>Contact your representatives</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-				<div id="share">
-					<h2>Share this information</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis mauris at eros porta aliquet. Vivamus vel diam et lorem faucibus iaculis ut a nunc. Nunc tincidunt, lectus vitae ultricies euismod, arcu lectus adipiscing turpis, at volutpat magna nibh ut turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
 			</div>
     </div>
