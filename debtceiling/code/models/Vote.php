@@ -40,6 +40,12 @@ class Vote_Controller extends Controller {
 	  parent::init();
 	 }
 		
+		
+		/**
+		 * Adds vote to the db.
+		 *
+		 * @return Vote data.
+		 */
 		protected function add() {
 			if($this->isAjax) {
 				$args = array(
