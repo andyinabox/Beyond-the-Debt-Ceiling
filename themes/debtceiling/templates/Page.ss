@@ -41,22 +41,22 @@
     <header>
 			<img id="logo" src="$ThemeDir/images/dc-logo.png" width="150" height="150" />
 			<h1>Beyond the<br /><strong>Debt Ceiling</strong></h1>
-			<p id="intro-text">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis mauris at eros porta aliquet. Vivamus vel diam et lorem faucibus iaculis ut a nunc. Nunc tincidunt, lectus vitae ultricies euismod, arcu lectus adipiscing turpis, at volutpat magna nibh ut turpis.
+			<!-- <p id="intro-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis mauris at eros porta aliquet. Vivamus vel diam et lorem faucibus iaculis ut a nunc. Nunc tincidunt, lectus vitae ultricies euismod, arcu lectus adipiscing turpis, at volutpat magna nibh ut turpis.</p> -->
     </header>
     <div id="main" role="main">
 			<div class="section clearfix" id="quiz">
 				<div id="quiz-question">
 					<h1>What <em>will</em> happen if the debt ceiling isn't raised?</h1>
-					<div id="quiz-illustration"><img src="$ThemeDir/images/illustrations-question.png" height="250" width="200"></div>
+					<div id="quiz-illustration"><img src="$ThemeDir/images/illustrations-debtceiling.png" height="200" width="200"></div>
 					<div id="quiz-answers">
 						<form>
 							<ul id="quiz-options">
-								<li><input name="quiz-option" id="quiz-option1" value="1" type="radio"> <label for="quiz-option1">Absolutely nothing.</label></li>
-								<li><input name="quiz-option" id="quiz-option2"  value="2" type="radio"> <label for="quiz-option2">America will be back on the right track to fiscal responsibility.</label></li>
-							<li><input name="quiz-option" id="quiz-option3"  value="3" type="radio"> <label for="quiz-option3">Locusts, plagues, four horsemen, the whole drill.</label></li>
-							<li><input name="quiz-option" id="quiz-option4"  value="4" type="radio">	 <label for="quiz-option4">The U.S. will fall deeper into economic decline.</label></li>			
-							<li><input name="quiz-option" id="quiz-option5"  value="5" type="radio">	 <label for="quiz-option5">I don't really know.</label></li>			
+								<li class="quiz-option"><input name="quiz-option" id="quiz-option1" value="1" type="radio"> <label for="quiz-option1">Absolutely nothing.</label></li>
+								<li class="quiz-option"><input name="quiz-option" id="quiz-option2"  value="2" type="radio"> <label for="quiz-option2">America will be back on the right track to fiscal responsibility.</label></li>
+							<li class="quiz-option"><input name="quiz-option" id="quiz-option3"  value="3" type="radio"> <label for="quiz-option3">Locusts, plagues, four horsemen, the whole drill.</label></li>
+							<li class="quiz-option"><input name="quiz-option" id="quiz-option4"  value="4" type="radio">	 <label for="quiz-option4">The U.S. will fall deeper into economic decline.</label></li>			
+							<li class="quiz-option"><input name="quiz-option" id="quiz-option5"  value="5" type="radio">	 <label for="quiz-option5">I don't really know.</label></li>			
 						</form>
 				<div class="hidden quiz-answer" id="quiz-answer1">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -77,25 +77,30 @@
 				</div>
 			</div>
 			<div id="story">
-				<div class="section clearfix" id="debt-ceiling">
-					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-				<div class="section clearfix" id="local">
-					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-				<div class="section clearfix" id="international">
-					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="section clearfix" id="average-american">
+					<h2>What does this mean for the average American?</h2>
+					<p><strong>Nearly half of all government checks won't get paid.</strong> That means that people depend on those checks &mdash; including active-duty soldiers, veterans, federal workers, and citizens waiting for tax refunds &mdash; may be out of luck. [citation]</p>
+					<p><strong>Credit card &amp; auto loan interest rates would raise.</strong> Because the nation wouldn't have enough cash to pay its creditors, global financial ratings services would downgrade America's current top-notch AAA rating, which would likely translate to increased interest rates, higher fees, and market that makes credit harder to come by. [citation]
+						<blockquote>It would not surprise me if [interest rates] went up 5 percent because this would be a serious violation of a premise that's been in the financial markets for a long, long time.</blockquote>
+						<p>&mdash; Mac Clouse, professor of finance at the University of Denver. [citation]</p>
+					</p>
 				</div>
 				<div class="section clearfix" id="long-term">
-					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<h2>What about the long-term costs?</h2>
+					<p>It's difficult to predict the exact economic repercussions if debt ceiling isn't raised, but it's <strong>likely to end up costing the U.S. money in the long run.</strong></p>
+					<p>Recently, Portugal voted against legislation that was necessary to avoid a European Union bail-out. The effect was similar &mdash; because it effected the country's credit rating, Portuguese borrowing costs skyrocketed. They will likely still have to pass similar legislation, and in the meantime it has cost Portuguese taxpayers about &euro;15,710,000 &mdash; about 22 million U.S. dollars. [citation]</p>
+					<blockquote>"If foreigners began curtailing their investment in Treasuries as a result of a default, Treasury rates, and thus Treasury’s borrowing costs, would undoubtedly rise. A sustained 50 basis point increase in Treasury rates would eventually cost U.S. taxpayers an additional <strong>$75 billion</strong> each year."</blockquote>
+					<p>&mdash; Matthew E. Zames, a managing director at JPMorgan Chase and the chairman of the Treasury Borrowing Advisory Committee [citation].
 				</div>
-				<div class="section clearfix" id="conclusion">
-					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="section clearfix" id="global">
+					<img src="$ThemeDir/images/illustrations-global.png" width="200" height="200" style="float: right">
+					<h2>What about the rest of the world?</h2>
+					<p>U.S. Federal Reserve chairman Ben Bernanke has stated that if U.S. became financially unreliable it <strong>"would throw shock waves through the entire global financial system."</strong> [citation] Markets react to crisis situations in irrational and unpredictable ways, and because the U.S. is still central to the global financial system its effects would be felt globally.</p>
+				</div>
+				<div class="section clearfix" id="what-can-i-do">
+					<img src="$ThemeDir/images/illustrations-whatcanido.png" width="200" height="200" style="float: left">
+					<h2>What can I do?</h2>
+					<p>It's not to late for Congress to find a compromise that doesn't end in default. If you're a U.S. citizen, use the information below to contact your representatives and let them know how you feel about the debt ceiling.</p>
 				</div>
 			</div>
 			<div class="section clearfix" id="do-something-about-it">

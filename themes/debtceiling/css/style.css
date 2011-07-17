@@ -173,7 +173,7 @@ h1 {
 	font-size: 200%;
 	font-weight: normal;
 }
-h1 em {
+em {
 	font-style: italic;
 }
 
@@ -184,10 +184,14 @@ h2 {
 	margin-bottom: .5em;
 }
 
+p {
+	margin-bottom: 1em;
+}
+
 body {
 	text-align: center;
 	font-family: 'PT Serif', serif;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 #container {
@@ -248,14 +252,14 @@ div.section#quiz h1 {
 }
 
 div.section#quiz #quiz-illustration {
-	float: left;
+	width: 200px;
+	position: absolute;
+	left: 50;
+	top: 50;
 }
 
 div.section#quiz #quiz-answers {
 	margin-left: 200px;
-}
-
-.quiz-answer {
 }
 
 div.section#quiz #quiz-answers ul {
@@ -264,7 +268,23 @@ div.section#quiz #quiz-answers li {
 	list-style: none;
 	font-size: 20px;
 	line-height: 40px;
+	clear: left;
 }
+div.section#quiz #quiz-answers li label {
+	font-size: 18px;
+	line-height: 1.5em;
+	display: block;
+	padding-top: .75em;
+}
+
+div.section#quiz #quiz-answers li .selected { cursor: default; }
+
+
+.quiz-answer {
+	clear: both;
+	margin-top: 1em;
+}
+
 
 #story div.section {
 	background: #7c94b8 url(../images/blue_paper.jpg);	
@@ -313,7 +333,8 @@ div.section#quiz #quiz-answers li {
 }
 */
 
-.jquery-checkbox       {display: inline; font-size: 40px; line-height: 40px; cursor: pointer; cursor: hand;}
+.jquery-checkbox       {display: block; float: left; font-size: 40px; line-height: 40px; cursor: pointer; cursor: hand;}
+.selected .jquery-checkbox, .selected label, .selected input { cursor: default; }
 .jquery-checkbox .mark {display: inline;}
 
 .jquery-checkbox img {vertical-align: middle; width: 40px; height: 40px;}

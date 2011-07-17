@@ -23,7 +23,7 @@ dc.setup = {
 				var loc = JSON.stringify(response);
 				$.cookie('btdc', loc);
 				dc.setup.loc = response;
-				alert($.cookie('btdc'));	
+				// alert($.cookie('btdc'));	
 			});
 		} else {
 			dc.setup.loc = $.parseJSON($.cookie('btdc')); 
@@ -46,23 +46,69 @@ $(document).ready(function() {
 	dc.setup.init();
 	
 	$('.quiz-answer').hide().removeClass('hidden');
+	$('.quiz-option').quiz();
+	
 	
 	// quiz stuff
 	$('input:radio').checkbox({
 		empty:'/themes/debtceiling/images/empty.png'
 	});
-	$('input:radio').click(function(e){
-		$(this).parent().siblings().hide("fast");
-		var vote = $(this).val();
-		ip.ip(function(response) {
-			quiz.vote(vote, response.ip);
-		});
-		$('#quiz-answer'+vote).show("slow");
-	})
+	// $('input:radio').click(function(e){
+	// 
+	// 	if(!$('#quiz-answer'+vote).is(':visible')) {
+	// 		$('#quiz-answer'+vote).show("slow");
+	// 	}
+	// })
 });
 
 
-
+(function($){
+ 
+    $.fn.extend({ 
+         
+        //pass the options variable to the function
+        quiz: function(options) {
+ 
+ 
+            //Set the default values, use comma to separate the settings, example:
+            var defaults = {
+                answerIdRoot: '#quiz-answer'
+            }
+                 
+            var options =  $.extend(defaults, options);
+ 
+            return this.each(function() {
+                var o = options;
+								var obj = $(this);
+								var checkbox = $('input:radio', obj);
+								var selected = false;
+																
+								checkbox.click(function(e) {
+									console.log("click");
+									if(!selected) {
+										selected = true;
+										obj.addClass('selected');
+										var vote = $(this).val();
+										if(!$.cookie('ivoted')) {
+											ip.ip(function(response) {
+												quiz.vote(vote, response.ip);
+												$.cookie('ivoted', vote);
+											});											
+										}
+										obj.siblings().hide("fast");
+										
+										// show answer
+										answer = $(options.answerIdRoot+vote);
+										if(!answer.is(':visible')) { answer.show('slow'); }
+									} else {
+										e.preventDefault();
+									}
+								});
+            });
+        }
+    });
+     
+})(jQuery);
 
 
 
