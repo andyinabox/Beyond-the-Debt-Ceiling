@@ -46,16 +46,34 @@
     </header>
     <div id="main" role="main">
 			<div class="section" id="quiz">
-				<h1>What <em>will</em> happen if the debt ceiling isn't raised?</h1>
-				<div id="quiz-illustration"><img src=""></div>
-				<div id="quiz-answers">
-					<form>
-						<ul>
-							<li><input name="quiz_answer" id="quiz_answer1" value="1" type="checkbox"> <label for="quiz_answer1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label></li>
-							<li><input name="quiz_answer" id="quiz_answer2"  value="2" type="checkbox"> <label for="quiz_answer1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label></li>
-						<li><input name="quiz_answer" id="quiz_answer3"  value="3" type="checkbox"> <label for="quiz_answer1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label></li>
-						<li><input name="quiz_answer" id="quiz_answer4"  value="4" type="checkbox">	 <label for="quiz_answer1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label></li>			
-					</form>
+				<div id="quiz-question">
+					<h1>What <em>will</em> happen if the debt ceiling isn't raised?</h1>
+					<div id="quiz-illustration"><img src=""></div>
+					<div id="quiz-answers">
+						<form>
+							<ul id="quiz-options">
+								<li><input name="quiz-option" id="quiz-option1" value="1" type="checkbox"> <label for="quiz-option1">Absolutely nothing.</label></li>
+								<li><input name="quiz-option" id="quiz-option2"  value="2" type="checkbox"> <label for="quiz-option2">America will be back on the right track to fiscal responsibility.</label></li>
+							<li><input name="quiz-option" id="quiz-option3"  value="3" type="checkbox"> <label for="quiz-option3">Locusts, plagues, four horsemen, the whole drill.</label></li>
+							<li><input name="quiz-option" id="quiz-option4"  value="4" type="checkbox">	 <label for="quiz-option4">The U.S. will fall deeper into economic decline.</label></li>			
+							<li><input name="quiz-option" id="quiz-option5"  value="5" type="checkbox">	 <label for="quiz-option5">I don't really know.</label></li>			
+						</form>
+					</div>
+				</div>
+				<div class="hidden quiz-answer" id="quiz-answer1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="hidden quiz-answer" id="quiz-answer1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="hidden quiz-answer" id="quiz-answer1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="hidden quiz-answer" id="quiz-answer1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="hidden quiz-answer" id="quiz-answer1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 			</div>
 			<div id="story">
