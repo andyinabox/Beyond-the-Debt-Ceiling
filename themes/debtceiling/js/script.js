@@ -43,6 +43,8 @@ var quiz = {
 $(document).ready(function() {
 	dc.setup.init();
 	
+	$('.quiz-answer').hide().removeClass('hidden');
+	
 	// quiz stuff
 	$('input:radio').checkbox({
 		empty:'/themes/debtceiling/images/empty.png'
@@ -53,6 +55,7 @@ $(document).ready(function() {
 		ip.ip(function(response) {
 			quiz.vote(vote, response.ip);
 		});
+		$('#quiz-answer'+vote).show("slow");
 	})
 });
 

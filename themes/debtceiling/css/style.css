@@ -174,9 +174,14 @@ h1 {
 	font-weight: normal;
 }
 
+h1 em {
+	font-style: italic;
+}
+
 body {
 	text-align: center;
 	font-family: 'PT Serif', serif;
+	font-size: 15px;
 }
 
 #container {
@@ -243,6 +248,9 @@ div.section#quiz #quiz-answers {
 	margin-left: 200px;
 }
 
+.quiz-answer {
+}
+
 div.section#quiz #quiz-answers ul {
 }
 div.section#quiz #quiz-answers li {
@@ -256,7 +264,7 @@ div.section#quiz #quiz-answers li {
 	
 }
 
-.jquery-checkbox {
+/*.jquery-checkbox {
 	background: #fff;
 	cursor: pointer;
 	background: transparent url(../images/checkbox-sprite.png) 0px 0px no-repeat;
@@ -275,7 +283,33 @@ div.section#quiz #quiz-answers li {
 .jquery-checkbox-hover {
 	background-position: 0px -40px;
 }
+*/
 
+.jquery-checkbox       {display: inline; font-size: 40px; line-height: 40px; cursor: pointer; cursor: hand;}
+.jquery-checkbox .mark {display: inline;}
+
+.jquery-checkbox img {vertical-align: middle; width: 40px; height: 40px;}
+.jquery-checkbox img{background: transparent url(../images/checkbox-sprite.png) no-repeat;}
+
+.jquery-checkbox img{
+	background-position: 0px 0px;
+}
+.jquery-checkbox-hover img{
+	background-position: 0px -40px;
+}
+.jquery-checkbox-checked img{
+	background-position: 0px -80px;
+}
+.jquery-checkbox-checked .jquery-checkbox-hover img {
+	background-position: 0px -80px;
+}
+
+.jquery-checkbox-disabled img{
+	background-position: 0px -80px;
+}
+.jquery-checkbox-checked .jquery-checkbox-disabled img{
+	background-position: 0px -100px;
+}
 
 
 /**
