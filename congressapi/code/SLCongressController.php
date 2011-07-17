@@ -18,7 +18,8 @@ class SLCongressController extends ContentController {
 	 */
 	public static $allowed_actions = array (
 		'zip',
-		'loc'
+		'loc',
+		'ip'
 	);
 	
 	/**
@@ -48,9 +49,19 @@ class SLCongressController extends ContentController {
 	/**
 	 * Return the current user's IP address
 	 *
+	 * @return ip address
+	 */
+	public function ip() {
+		return json_encode(array('ip' => $this->_ip())); 
+	}
+	
+	
+	/**
+	 * Return the current user's IP address
+	 *
 	 * @return unknown
 	 */
-	protected function ip() {
+	protected function _ip() {
 		return $_SERVER['REMOTE_ADDR'];
 	}
 	
@@ -64,7 +75,7 @@ class SLCongressController extends ContentController {
 		if(Director::urlParam('Query')) {
 			$ip = Director::urlParam('Query');
 		} else {
-			$ip = $this->ip();
+			$ip = $this->_ip();
 		}
 		$location = $ipInfo->getCity($ip);
 		if($location['countryCode'] != "US") {

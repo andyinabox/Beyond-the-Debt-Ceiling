@@ -15,5 +15,8 @@ sl.leg = {
 var ip = {
 	loc: function(callback) {
 		$.getJSON('leg/loc', callback);
-	}	
+	},
+	ip: function(callback) {
+		$.getJSON('leg/ip', callback);
+	}
 }
