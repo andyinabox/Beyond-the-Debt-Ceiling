@@ -5,6 +5,7 @@
 var dc = {};
 dc.modules = {};
 
+
 /*
  * 
  * Sort of works.  
@@ -30,12 +31,30 @@ dc.setup = {
 	}
 }
 
+var quiz = {
+	vote: function(vote, ip) {
+		$.getJSON('vote/add/'+vote+'/'+ip, function(response) {
+			return response;
+		});
+	}
+}
+
 
 $(document).ready(function() {
 	dc.setup.init();
+	
+	// quiz stuff
+	$('input:radio').checkbox({
+		empty:'/themes/debtceiling/images/empty.png'
+	});
+	$('input:radio').click(function(e){
+		$(this).parent().siblings().hide("fast");
+		var vote = $(this).val();
+		ip.ip(function(response) {
+			quiz.vote(vote, response.ip);
+		});
+	})
 });
-
-
 
 
 

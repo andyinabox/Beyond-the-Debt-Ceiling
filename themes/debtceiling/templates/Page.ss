@@ -52,11 +52,11 @@
 					<div id="quiz-answers">
 						<form>
 							<ul id="quiz-options">
-								<li><input name="quiz-option" id="quiz-option1" value="1" type="checkbox"> <label for="quiz-option1">Absolutely nothing.</label></li>
-								<li><input name="quiz-option" id="quiz-option2"  value="2" type="checkbox"> <label for="quiz-option2">America will be back on the right track to fiscal responsibility.</label></li>
-							<li><input name="quiz-option" id="quiz-option3"  value="3" type="checkbox"> <label for="quiz-option3">Locusts, plagues, four horsemen, the whole drill.</label></li>
-							<li><input name="quiz-option" id="quiz-option4"  value="4" type="checkbox">	 <label for="quiz-option4">The U.S. will fall deeper into economic decline.</label></li>			
-							<li><input name="quiz-option" id="quiz-option5"  value="5" type="checkbox">	 <label for="quiz-option5">I don't really know.</label></li>			
+								<li><label for="quiz-option1"><input name="quiz-option" id="quiz-option1" value="1" type="radio"> Absolutely nothing.</label></li>
+								<li><input name="quiz-option" id="quiz-option2"  value="2" type="radio"> <label for="quiz-option2">America will be back on the right track to fiscal responsibility.</label></li>
+							<li><input name="quiz-option" id="quiz-option3"  value="3" type="radio"> <label for="quiz-option3">Locusts, plagues, four horsemen, the whole drill.</label></li>
+							<li><input name="quiz-option" id="quiz-option4"  value="4" type="radio">	 <label for="quiz-option4">The U.S. will fall deeper into economic decline.</label></li>			
+							<li><input name="quiz-option" id="quiz-option5"  value="5" type="radio">	 <label for="quiz-option5">I don't really know.</label></li>			
 						</form>
 					</div>
 				</div>
@@ -125,6 +125,7 @@
   <% require javascript(congressapi/javascript/sl-congress-api.js) %>
   <% require javascript(themes/debtceiling/js/jquery.cookie.js) %>
   <!-- scripts concatenated and minified via ant build script-->
+  <% require javascript(themes/debtceiling/js/plugins.js) %>
   <% require javascript(themes/debtceiling/js/script.js) %>
   <!-- end scripts-->
 

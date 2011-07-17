@@ -210,8 +210,23 @@ div.section {
 	margin: 3em 0;
 }
 
+.jquery-checkbox {
+	background: #fff;
+	cursor: pointer;
+}
+.jquery-checkbox img {
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
+}
 
+.jquery-checkbox-checked {
+	background: red;
+}
 
+.jquery-checkbox-hover {
+	background: #ccc;
+}
 
 
 
