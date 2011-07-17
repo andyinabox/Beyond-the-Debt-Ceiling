@@ -39,16 +39,16 @@
 
   <div id="container">
     <header>
-			<img id="logo" />
-			<h1>Beyond the Debt Ceiling</h1>
+			<img id="logo" src="$ThemeDir/images/dc-logo.png" width="150" height="150" />
+			<h1>Beyond the<br /><strong>Debt Ceiling</strong></h1>
 			<p id="intro-text">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis mauris at eros porta aliquet. Vivamus vel diam et lorem faucibus iaculis ut a nunc. Nunc tincidunt, lectus vitae ultricies euismod, arcu lectus adipiscing turpis, at volutpat magna nibh ut turpis.
     </header>
     <div id="main" role="main">
-			<div class="section" id="quiz">
+			<div class="section clearfix" id="quiz">
 				<div id="quiz-question">
 					<h1>What <em>will</em> happen if the debt ceiling isn't raised?</h1>
-					<div id="quiz-illustration"><img src=""></div>
+					<div id="quiz-illustration"><img src="" height="250px" width="200px"></div>
 					<div id="quiz-answers">
 						<form>
 							<ul id="quiz-options">
@@ -59,7 +59,6 @@
 							<li><input name="quiz-option" id="quiz-option5"  value="5" type="radio">	 <label for="quiz-option5">I don't really know.</label></li>			
 						</form>
 					</div>
-				</div>
 				<div class="hidden quiz-answer" id="quiz-answer1">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
@@ -75,30 +74,31 @@
 				<div class="hidden quiz-answer" id="quiz-answer1">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
+			</div>
 			</div>
 			<div id="story">
-				<div class="section" id="debt-ceiling">
+				<div class="section clearfix" id="debt-ceiling">
 					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
-				<div class="section" id="local">
+				<div class="section clearfix" id="local">
 					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
-				<div class="section" id="international">
+				<div class="section clearfix" id="international">
 					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
-				<div class="section" id="long-term">
+				<div class="section clearfix" id="long-term">
 					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
-				<div class="section" id="conclusion">
+				<div class="section clearfix" id="conclusion">
 					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
 			</div>
-			<div class="section" id="do-something-about-it">
+			<div class="section clearfix" id="do-something-about-it">
 				<div id="contact">
 					<h2>Contact your representatives</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

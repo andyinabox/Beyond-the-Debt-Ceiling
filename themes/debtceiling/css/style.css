@@ -190,42 +190,90 @@ header {
 }
 header h1 {
 	font-size: 40px;
+	text-align: left;
+	font-style: italic;
+	padding-top: 20px;
+}
+header h1 strong {
+	font-size: 50px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+header #logo {
+	float: left;
+	margin-left: 80px;
+	margin-right: 20px;
 }
 header #intro-text {
-	margin: 20px 50px;
+	clear: both;
+	margin: 50px;
 	font-size: 18px;
 }
 
 #main {
 	margin-top: 50px;
-	background: #869cbf url(../images/blue_paper.jpg);
-	padding: 50px;
 	color: #fff;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+
 }
 
 div.section {
 	margin: 3em 0;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	padding: 30px 50px;
+	background: #ccc url(../images/grey_paper.jpg);	
+}
+
+div.section#quiz {
+	background: #c46262 url(../images/red_paper.jpg);	
+}
+
+div.section#quiz h1 {
+	font-size: 30px;
+	margin-bottom: 1em;
+}
+
+div.section#quiz #quiz-illustration {
+	float: left;
+}
+
+div.section#quiz #quiz-answers {
+	margin-left: 200px;
+}
+
+div.section#quiz #quiz-answers ul {
+}
+div.section#quiz #quiz-answers li {
+	list-style: none;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+#story div.section {
+	background: #7c94b8 url(../images/blue_paper.jpg);	
+	
 }
 
 .jquery-checkbox {
 	background: #fff;
 	cursor: pointer;
+	background: transparent url(../images/checkbox-sprite.png) 0px 0px no-repeat;
 }
 .jquery-checkbox img {
 	vertical-align: middle;
-	width: 18px;
-	height: 18px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
 }
 
 .jquery-checkbox-checked {
-	background: red;
+	background-position: 0px -80px;
 }
 
 .jquery-checkbox-hover {
-	background: #ccc;
+	background-position: 0px -40px;
 }
 
 
