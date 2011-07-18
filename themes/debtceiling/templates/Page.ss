@@ -106,13 +106,15 @@
 			<div class="section clearfix" id="do-something-about-it">
 				<div id="contact">
 					<div id="zip-form">
-						<form>
-							<input type="text" value="zipcode" id="zip" name="zip">
-							<label for="zip">Enter your zip code here.</label>
-						</form>
+						<input type="text" value="" placeholder="zipcode" id="zip" name="zip" maxlength="5">
+						<label for="zip">Enter your zip code here.</label>
 					</div>
 					<h1>Contact your representatives</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<ul id="reps">
+						
+					</ul>
+					
 				</div>
 			</div>
     </div>
@@ -128,9 +130,10 @@
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
   <% require javascript(themes/debtceiling/js/libs/jquery-1.5.1.min.js) %>
-  <% require javascript(congressapi/javascript/json2.js) %>
+  <% require javascript(themes/debtceiling/js/libs/json2.js) %>
   <% require javascript(congressapi/javascript/sl-congress-api.js) %>
-  <% require javascript(themes/debtceiling/js/jquery.cookie.js) %>
+  <% require javascript(themes/debtceiling/js/libs/jquery.cookie.js) %>
+  <% require javascript(themes/debtceiling/js/libs/underscore-min.js) %>
   <!-- scripts concatenated and minified via ant build script-->
   <% require javascript(themes/debtceiling/js/plugins.js) %>
   <% require javascript(themes/debtceiling/js/script.js) %>

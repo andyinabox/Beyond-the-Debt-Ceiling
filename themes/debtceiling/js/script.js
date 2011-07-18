@@ -3,7 +3,54 @@
 */
 
 var dc = {};
-dc.modules = {};
+
+dc.util = {
+	validateZipCode: function(elementValue) {
+    	var zipCodePattern = /^\d{5}$/;
+     	return zipCodePattern.test(elementValue);
+	}
+}
+
+dc.reps = {
+	// Get legislators for the obtained location, insert into DOM
+	getReps: function(zip) {
+		// validate zip
+		if(!dc.util.validateZipCode(zip)) {
+			alert("Please enter a valid zipcode.");
+			return;
+		}
+		// set loc to entered zip
+		$.cookie('btdcz', zip); 
+		sl.leg.zip(zip, function(response) {
+			dc.setup.reps = response;
+			$("#reps").empty();
+			_.each(dc.setup.reps, function(item) {
+				if(!_.isUndefined(item.legislator)) {
+					var li = "<li>";
+					li += "<em class='repname'>";
+					if(item.legislator.chamber == "house") {
+						li += "Representative "+item.legislator.firstname+" "+item.legislator.lastname;
+					} else {
+						li += "Senator "+item.legislator.firstname+" "+item.legislator.lastname;
+					}
+					li += " ("+item.legislator.party+"-"+item.legislator.state+")</em><br/>";
+					li += "<span class='phone'>phone: "+item.legislator.phone+"</span><br/>";
+					li += "<span class='webform'>contact form: <a href='"+item.legislator.webform+"'>"+item.legislator.webform+"</a></span>";
+					li += "</li>";
+					/*
+					<li>
+						<em class="repname">Senator Herb Kohl (D-WI)</em><br/>
+						<span class="phone">phone: 202-224-5653</span><br/>
+						<span class="webform">contact form: <a class="webformhref" href="#">http://kohl.senate.gov/contact.cfm</a></span>
+					</li>*/
+					$("#reps").append(li);
+					//alert(item.legislator.lastname);
+				}
+			});
+		});
+	} 
+	
+};
 
 
 /*
@@ -19,36 +66,34 @@ dc.setup = {
 	loc: null,
 	reps: null,
 	init: function() {
-		if(!$.cookie('btdc')) {
+		if(!$.cookie('btdcz')) {
 			// Add the IP param for local testing after callback function
 			ip.loc(function(response) {
-				var loc = JSON.stringify(response);
-				alert(loc);
+				//var loc = JSON.stringify(response);
+				// alert(loc);
 				// If a location has been found set cookie and loc object, get legislators. 
 				if(response.success) {
-					$.cookie('btdc', loc);
-					dc.setup.loc = response;
-					dc.setup.getLegs();
+					if(response.zipCode != "-") {
+						$.cookie('btdcz', response.zipCode);
+						dc.setup.loc = response.zipCode;
+						$("#zip").val(dc.setup.loc);
+						dc.reps.getReps(dc.setup.loc);
+					}
 				}
 				//alert(dc.setup.loc.zipCode);
 				// alert($.cookie('btdc'));	
-			}, '166.237.136.1');
+			}, '68.131.38.149');
 		} else {
 			// A location cookie has been found, get legislators.
-			dc.setup.loc = $.parseJSON($.cookie('btdc'));
-			dc.setup.getLegs();
+			dc.setup.loc = $.cookie('btdcz');
+			if(dc.setup.loc != "-") {
+				$("#zip").val(dc.setup.loc);
+				dc.reps.getReps(dc.setup.loc);
+			} else {
+				// cookie found, but no location... try again (could be new IP on laptop)?  Or just let user enter a zip.
+			}
 		}
-	},
-	
-	// Get legislators for the obtained location, insert into DOM
-	getLegs: function() {
-		if(dc.setup.loc && (dc.setup.loc.success == 1)) {
-			sl.leg.zip(dc.setup.loc.zipCode, function(response) {
-				dc.setup.reps = response;
-			});
-		} else {
-					}
-	} 
+	}
 }
 
 var quiz = {
@@ -79,6 +124,35 @@ $(document).ready(function() {
 	// 		$('#quiz-answer'+vote).show("slow");
 	// 	}
 	// })
+	
+	$('input#zip').keydown(function(e) {
+		//alert(e.keyCode);
+		
+		if (e.keyCode) {
+        	key = e.keyCode;
+  		} else { // mozilla
+	        key = e.which;
+      	}
+		switch(key) {
+			// left
+			case 37: 
+			  break;
+			// up
+			case 38: 
+			  break;
+			// right
+			case 39:
+			  break;
+			// down
+			case 40:
+			  break;
+			// enter
+			case 13: 
+			  dc.reps.getReps($(this).val());
+			  break;
+		}
+	});
+	
 });
 
 
