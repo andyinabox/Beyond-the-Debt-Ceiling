@@ -127,7 +127,7 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <% require javascript(themes/debtceiling/js/libs/jquery-1.5.1.min.js) %>
   <% require javascript(congressapi/javascript/json2.js) %>
   <% require javascript(congressapi/javascript/sl-congress-api.js) %>
   <% require javascript(themes/debtceiling/js/jquery.cookie.js) %>

@@ -17,18 +17,38 @@ dc.modules = {};
  */
 dc.setup = {
 	loc: null,
+	reps: null,
 	init: function() {
 		if(!$.cookie('btdc')) {
+			// Add the IP param for local testing after callback function
 			ip.loc(function(response) {
 				var loc = JSON.stringify(response);
-				$.cookie('btdc', loc);
-				dc.setup.loc = response;
+				alert(loc);
+				// If a location has been found set cookie and loc object, get legislators. 
+				if(response.success) {
+					$.cookie('btdc', loc);
+					dc.setup.loc = response;
+					dc.setup.getLegs();
+				}
+				//alert(dc.setup.loc.zipCode);
 				// alert($.cookie('btdc'));	
+			}, '166.237.136.1');
+		} else {
+			// A location cookie has been found, get legislators.
+			dc.setup.loc = $.parseJSON($.cookie('btdc'));
+			dc.setup.getLegs();
+		}
+	},
+	
+	// Get legislators for the obtained location, insert into DOM
+	getLegs: function() {
+		if(dc.setup.loc && (dc.setup.loc.success == 1)) {
+			sl.leg.zip(dc.setup.loc.zipCode, function(response) {
+				dc.setup.reps = response;
 			});
 		} else {
-			dc.setup.loc = $.parseJSON($.cookie('btdc')); 
-		}
-	}
+					}
+	} 
 }
 
 var quiz = {
@@ -79,31 +99,31 @@ $(document).ready(function() {
  
             return this.each(function() {
                 var o = options;
-								var obj = $(this);
-								var checkbox = $('input:radio', obj);
-								var selected = false;
-																
-								checkbox.click(function(e) {
-									console.log("click");
-									if(!selected) {
-										selected = true;
-										obj.addClass('selected');
-										var vote = $(this).val();
-										if(!$.cookie('ivoted')) {
-											ip.ip(function(response) {
-												quiz.vote(vote, response.ip);
-												$.cookie('ivoted', vote);
-											});											
-										}
-										obj.siblings().hide("fast");
-										
-										// show answer
-										answer = $(options.answerIdRoot+vote);
-										if(!answer.is(':visible')) { answer.show('slow'); }
-									} else {
-										e.preventDefault();
-									}
-								});
+				var obj = $(this);
+				var checkbox = $('input:radio', obj);
+				var selected = false;
+												
+				checkbox.click(function(e) {
+					console.log("click");
+					if(!selected) {
+						selected = true;
+						obj.addClass('selected');
+						var vote = $(this).val();
+						if(!$.cookie('ivoted')) {
+							ip.ip(function(response) {
+								quiz.vote(vote, response.ip);
+								$.cookie('ivoted', vote);
+							});											
+						}
+						obj.siblings().hide("fast");
+						
+						// show answer
+						answer = $(options.answerIdRoot+vote);
+						if(!answer.is(':visible')) { answer.show('slow'); }
+					} else {
+						e.preventDefault();
+					}
+				});
             });
         }
     });

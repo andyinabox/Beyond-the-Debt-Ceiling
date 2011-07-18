@@ -80,6 +80,9 @@ class SLCongressController extends ContentController {
 		$location = $ipInfo->getCity($ip);
 		if($location['countryCode'] != "US") {
 			$location['success'] = 0;
+
+			// FOR TESTING ONLY!!
+//			$location['zipCode'] = 53703;
 		} else {
 			$location['success'] = 1;
 		}
