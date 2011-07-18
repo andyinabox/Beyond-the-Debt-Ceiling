@@ -114,7 +114,7 @@
 					<ul id="reps">
 						
 					</ul>
-					
+					<div id="loading-reps"><img src="$ThemeDir/images/ajax-loader.gif" />&nbsp;&nbsp;Finding representative info...</div>
 				</div>
 			</div>
     </div>

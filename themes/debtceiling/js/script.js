@@ -11,9 +11,20 @@ dc.util = {
 	}
 }
 
+
+/**
+ * Feel free to change the way this displays.  You can see the full reps object,
+ * which contains all found legislators, using the js console:
+ * 
+ * dc.setup.reps
+ * 
+ */
 dc.reps = {
 	// Get legislators for the obtained location, insert into DOM
 	getReps: function(zip) {
+		// clear current rep list, show loader
+		$("#reps").empty();
+		$("#loading-reps").show();
 		// validate zip
 		if(!dc.util.validateZipCode(zip)) {
 			alert("Please enter a valid zipcode.");
@@ -22,8 +33,18 @@ dc.reps = {
 		// set loc to entered zip
 		$.cookie('btdcz', zip); 
 		sl.leg.zip(zip, function(response) {
+			$("#loading-reps").hide();
 			dc.setup.reps = response;
-			$("#reps").empty();
+			dc.setup.reps = _.sortBy(dc.setup.reps, function(item) {
+				if(!_.isUndefined(item.legislator)) {
+					return item.legislator.chamber;
+					if(item.legislator.chamber == "senate") {
+						return 1;
+					} else {
+						return 2;
+					}
+				}
+			});
 			_.each(dc.setup.reps, function(item) {
 				if(!_.isUndefined(item.legislator)) {
 					var li = "<li>";
@@ -35,13 +56,13 @@ dc.reps = {
 					}
 					li += " ("+item.legislator.party+"-"+item.legislator.state+")</em><br/>";
 					li += "<span class='phone'>phone: "+item.legislator.phone+"</span><br/>";
-					li += "<span class='webform'>contact form: <a href='"+item.legislator.webform+"'>"+item.legislator.webform+"</a></span>";
+					li += "<span class='webform'>contact form: <a target='_blank' href='"+item.legislator.webform+"'>"+item.legislator.webform+"</a></span>";
 					li += "</li>";
 					/*
 					<li>
 						<em class="repname">Senator Herb Kohl (D-WI)</em><br/>
 						<span class="phone">phone: 202-224-5653</span><br/>
-						<span class="webform">contact form: <a class="webformhref" href="#">http://kohl.senate.gov/contact.cfm</a></span>
+						<span class="webform">contact form: <a target='_blank' class="webformhref" href="#">http://kohl.senate.gov/contact.cfm</a></span>
 					</li>*/
 					$("#reps").append(li);
 					//alert(item.legislator.lastname);
@@ -54,9 +75,6 @@ dc.reps = {
 
 
 /*
- * 
- * Sort of works.  
- * 
  * This should check if the cookie is set, if so pull the location data from it and store it in JS.
  * 
  * If cookie is NOT set, grab the location data from the server, store it in JS, and set the cookie.
@@ -82,7 +100,7 @@ dc.setup = {
 				}
 				//alert(dc.setup.loc.zipCode);
 				// alert($.cookie('btdc'));	
-			}, '68.131.38.149');
+			}, '63.131.38.149');
 		} else {
 			// A location cookie has been found, get legislators.
 			dc.setup.loc = $.cookie('btdcz');

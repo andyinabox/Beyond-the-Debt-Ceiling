@@ -312,6 +312,13 @@ div.section#quiz #quiz-answers li .selected { cursor: default; }
 	font-size: 12px;
 }
 
+#loading-reps {
+	display: none;
+	position: relative;
+	margin-top: 40px;
+	margin-left: 30%;	
+}
+
 /*.jquery-checkbox {
 	background: #fff;
 	cursor: pointer;
