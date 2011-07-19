@@ -38,7 +38,6 @@
 <body>
 
   <div id="container">
-  		$Form
 		<nav id="topnav">
 			<div id="social">
 				<div id="facebook"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=129663287122703&amp;xfbml=1"></script><fb:like href="http://beyondthedebtceiling.us" send="true" layout="button_count" width="100" show_faces="false" font=""></fb:like></div>
