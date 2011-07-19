@@ -101,8 +101,8 @@ dc.setup = {
 				//alert(dc.setup.loc.zipCode);
 				// alert($.cookie('btdc'));	
 			// below is for testing only
-			}, '63.131.38.149');
-			// });
+			// }, '63.131.38.149');
+			});
 		} else {
 			// A location cookie has been found, get legislators.
 			dc.setup.loc = $.cookie('btdcz');
