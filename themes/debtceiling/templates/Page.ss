@@ -18,17 +18,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="$ThemeDir/images/favicon.ico">
-  <link rel="apple-touch-icon" href="$ThemeDir/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/$ThemeDir/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/$ThemeDir/images/apple-touch-icon.png">
 
 
   <!-- CSS: implied media="all" -->
 	<link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic|PT+Serif:400,700,400italic&v2' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="$ThemeDir/css/style.css?v=2">
+  <link rel="stylesheet" href="/$ThemeDir/css/style.css?v=2">
 
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
-  <link rel="stylesheet" media="handheld" href="$ThemeDir/css/handheld.css?v=2">  -->
+  <link rel="stylesheet" media="handheld" href="/$ThemeDir/css/handheld.css?v=2">  -->
 
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="$ThemeDir/js/libs/modernizr-1.7.min.js"></script>
@@ -52,6 +52,7 @@
 			<img id="logo" src="$ThemeDir/images/dc-logo.png" width="150" height="150" />
 			<h1>Beyond the<br /><strong>Debt Ceiling</strong></h1>
     </header>
+		$Form
     <div id="main" role="main">
 			<div class="section clearfix" id="quiz">
 				<div id="quiz-question">
@@ -67,24 +68,21 @@
 							<li class="quiz-option"><input name="quiz-option" id="quiz-option5"  value="5" type="radio">	 <label for="quiz-option5">I don't really know.</label></li>			
 						</form>
 				<div class="hidden quiz-answer" id="quiz-answer1">
-					<p>Hmm. Really?? I’m going to have to disagree with you.  If our congress fails to raise our debt-limit (the amount money the U.S. Government is allowed to borrow), our country will “default” on its debts, meaning it won’t be able to pay its bills. Unless you’re a back-to-lander who lives off the grid (and you probably aren’t because you’re using the internet), the fallout of a U.S. Government credit market default will reach you.  And you probably won’t like it.</p>
-						<p>Allow me to explain. The U.S. government’s creditworthiness serves as a foundation for cost of living and the cost of doing business anywhere we spend American dollars.  The cost of any American’s mortgage, credit card or business loan, for example, is financially linked to our government’s credit rating. We’ve been told in no uncertain terms by the credit rating agencies that IF the U.S. Government defaults, they will downgrade its credit rating. Doing so would make the U.S. Government’s cost of doing business go up, and likely also make your cost of living and doing business go up.</p>
-						<p>So, at the very least, its safe to assume that SOMETHING will happen, and you will feel it.</p>
+					<p>If our congress fails to raise our debt-limit (the amount money the U.S. Government is allowed to borrow), our country will default on its debts, meaning it won’t be able to pay its bills. This combined with the fact that the world economic system is centered around the U.S. means that global market will certainly be effected. While it's difficult to predict <em>exactly what</em> will happen, its safe to assume that <em>something</em> will happen, and you will probably feel it.</p>
+					<p><a class="learn-more" href="#story">Learn more</a></p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer2">
-					<p>I think I understand where you’re coming from&hellip;  Can I assume you oppose raising the debt limit because you believe the U.S. Government has borrowed too much money already? You’re thinking enough is enough, am I right? I can certainly empathize with that position.  Our country is deeply in debt.</p>
-					<p>At the same time, I must point out that failing to raise the debt limit at this point in time (especially in light of the economic recession and recovery) will likely be counter-productive toward the goal of wrangling the debt under control.  Put simply, not borrowing a little more money right now risks damaging the U.S. Economy during a delicate recovery.  Whereas if we safeguard the economy until its healthy, we’ll be in a much better financial position to really deal with the debt and balance the budget. And balancing the budget it really what’ll solve our long-term debt problems, not refusing to raise the debt limit.</p>
-					<p>We would also like to mention that the last time the U.S. Government didn’t run an annual deficit was under the Clinton Administration. Clinton is on record as saying, ‘the United States should continue to balance its books and pay off the debt entirely’.</p>
+					<p>Perhaps assume you oppose raising the debt limit because you believe the U.S. Government has borrowed too much money already? You’re thinking enough is enough, right? The U.S. deficit is certainly worth being concerned about. Unfortunately, failing to raise the debt ceiling right now will almost certainly hurt the U.S. economy more than it helps it &mdash; especially during a delicate recovery.</p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer3">
-					<p>Haha. Well, I suppose if the armageddon arrives you won’t be caught by surprise. But even if it’s not the end of the world, it could still be pretty bad. Here’s why. 
+					<p>Haha. Well, if armageddon arrives you won’t be caught by surprise. But even if it’s not the end of the world, it could still be pretty bad. Here’s why. 
 					</p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer4">
-					<p>Yeah, you know, honestly this is the most likely result. Assuming you’d like to avoid that scenario, consider contacting your legislator and telling them you support raising the debt limit. You may like to reference our fact sheets when telling them why.</p>
+					<p>From the facts at hand, this seems to be the most likely result. Assuming you’d like to avoid that scenario, consider <a href="#do-something-about-it">contacting your legislator</a> and telling them why it's important to you that we raise the debt limit.</p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer5">
-					<p>That's ok.</p>
+					<p>Well, then, you've come to the right place!</p>
 				</div>
 				</div>
 				</div>
@@ -131,7 +129,6 @@
 				</div>
 			</div>
     </div>
-		$Login
 
     <footer>
 			A public service announcement by <a href="The Notion Collective">The Notion Collective</a> &amp; The Marauding Tigers

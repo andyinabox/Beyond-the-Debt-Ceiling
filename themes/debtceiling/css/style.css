@@ -293,6 +293,26 @@ div.section a {
 	color: #fff;
 }
 
+div.section a.learn-more {
+	background: #7c94b8 url(../images/blue_paper.jpg);	
+	padding: 5px 1em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 3px dotted #fff;
+	text-transform: uppercase;
+	font-family: 'IM Fell DW Pica', serif;
+	text-decoration: none;
+	display: block;
+	float: right;
+	width: 350px;
+	text-align: center;
+}
+
+div.section a.learn-more:hover {
+	background: #ccc url(../images/grey_paper.jpg);	
+}
+
 div.section .quote {
 	width: 250px;
 	float: right;
