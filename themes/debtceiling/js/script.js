@@ -47,16 +47,16 @@ dc.reps = {
 			});
 			_.each(dc.setup.reps, function(item) {
 				if(!_.isUndefined(item.legislator)) {
-					var li = "<li>";
-					li += "<em class='repname'>";
+					var li = "<li class='"+item.legislator.party+"'>";
+					li += "<h3 class='repname'>";
+					li += "<a target='_blank' href='"+item.legislator.website+"'>"
 					if(item.legislator.chamber == "house") {
 						li += "Representative "+item.legislator.firstname+" "+item.legislator.lastname;
 					} else {
 						li += "Senator "+item.legislator.firstname+" "+item.legislator.lastname;
 					}
-					li += " ("+item.legislator.party+"-"+item.legislator.state+")</em><br/>";
-					li += "<span class='phone'>phone: "+item.legislator.phone+"</span><br/>";
-					li += "<span class='webform'>contact form: <a target='_blank' href='"+item.legislator.webform+"'>"+item.legislator.webform+"</a></span>";
+					li += " ("+item.legislator.party+"-"+item.legislator.state+")</a></h3>";
+					li += "<span class='phone'>Phone: "+item.legislator.phone+"</span>";
 					li += "</li>";
 					/*
 					<li>
@@ -100,7 +100,9 @@ dc.setup = {
 				}
 				//alert(dc.setup.loc.zipCode);
 				// alert($.cookie('btdc'));	
+			// below is for testing only
 			}, '63.131.38.149');
+			// });
 		} else {
 			// A location cookie has been found, get legislators.
 			dc.setup.loc = $.cookie('btdcz');

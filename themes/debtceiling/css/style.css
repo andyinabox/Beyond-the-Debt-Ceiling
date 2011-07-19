@@ -32,6 +32,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+	line-height: 1.3em;
 }
 
 article, aside, details, figcaption, figure,
@@ -179,7 +180,7 @@ em {
 
 h2 {
 	font-family: 'IM Fell DW Pica', serif;
-	font-size: 150%;
+	font-size: 160%;
 	font-weight: normal;
 	margin-bottom: .5em;
 }
@@ -198,6 +199,45 @@ body {
 	text-align: left;
 	margin: 20px auto;
 	width: 700px;
+	margin-top: 50px;
+}
+
+nav#topnav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+	background: #fff;
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	filter:alpha(opacity=90);
+	z-index: 69;
+	border-bottom: 1px solid #ddd;
+}
+
+#bigbuttons a {
+	padding: 5px .75em;
+	color: #fff;
+	text-decoration: none;
+	background: #7c94b8 url(../images/blue_paper.jpg);	
+	line-height: 30px;
+}
+
+#bigbuttons a:hover {
+	background: #c46262 url(../images/red_paper.jpg);	
+}
+
+div#social {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+div#social #facebook,
+div#social #twitter,
+div#social #google {
+	float: right;
 }
 
 header {
@@ -226,6 +266,13 @@ header #intro-text {
 	font-size: 18px;
 }
 
+footer {
+	text-align: center;
+}
+footer a {
+	color: #000;
+}
+
 #main {
 	margin-top: 50px;
 	color: #fff;
@@ -242,39 +289,67 @@ div.section {
 	position: relative;
 }
 
+div.section a {
+	color: #fff;
+}
+
+div.section .quote {
+	width: 250px;
+	float: right;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+div.section .quote.left {
+	float: left;
+	margin-left: 0;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+div.section blockquote {
+/*	font-family: 'IM Fell DW Pica', serif;*/
+	font-size: 19px;
+	margin-bottom: .5em;
+}
+
 div.section#quiz {
 	background: #c46262 url(../images/red_paper.jpg);	
+	min-height: 250px;
 }
 
 div.section#quiz h1 {
 	font-size: 30px;
-	margin-bottom: 1em;
+/*	margin-bottom: .5em;*/
 }
 
 div.section#quiz #quiz-illustration {
 	width: 200px;
 	position: absolute;
-	left: 50;
-	top: 50;
+	left: 50px;
+	top: 80px;
 }
 
 div.section#quiz #quiz-answers {
-	margin-left: 200px;
+	margin-left: 220px;
+	margin-top: 1em;
 }
 
 div.section#quiz #quiz-answers ul {
+	margin: 0;
+	padding: 0;
 }
 div.section#quiz #quiz-answers li {
 	list-style: none;
 	font-size: 20px;
 	line-height: 40px;
 	clear: left;
+	margin: 0;
+	padding: 0;
 }
 div.section#quiz #quiz-answers li label {
 	font-size: 18px;
-	line-height: 1.5em;
+	line-height: 1.3em;
 	display: block;
-	padding-top: .75em;
+	padding-top: 9px;
 }
 
 div.section#quiz #quiz-answers li .selected { cursor: default; }
@@ -291,25 +366,33 @@ div.section#quiz #quiz-answers li .selected { cursor: default; }
 }
 
 #do-something-about-it {
-	
+	background: #fff;
+	color: #333;
+	border: 4px solid #ddd;
 }
 
 
 
 #do-something-about-it #zip-form {
-	width: 150px;
-	position: absolute;
-	top: 20px;
-	right: 50px;
+	width: 100px;
+	float: right;
+	margin-left: 1em;
+	margin-bottom: 1em;
 }
 
 #do-something-about-it #zip-form input {
 	border: none;
-	width: 150px;
+	width: 100px;
 	font-size: 30px;
+	border: 4px dotted #ddd;
+	background: transparent;
+	color: #333;
+	font-family: 'PT Serif', serif;
 }
 #do-something-about-it #zip-form label {
 	font-size: 12px;
+	line-height: 1em;
+	text-transform: uppercase;
 }
 
 #loading-reps {
@@ -317,6 +400,40 @@ div.section#quiz #quiz-answers li .selected { cursor: default; }
 	position: relative;
 	margin-top: 40px;
 	margin-left: 30%;	
+}
+	
+ul#reps {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul#reps li {
+	list-style: none;
+	width: 250px;
+	float: left;
+	padding: 15px;
+	background: #ccc url(../images/grey_paper.jpg);
+	color: #fff;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+ul#reps li.D {
+	background: #7c94b8 url(../images/blue_paper.jpg);
+}
+
+ul#reps li.R {
+	background: #c46262 url(../images/red_paper.jpg);	
+}
+
+ul#reps li h3 {
+	font-family: 'IM Fell DW Pica', serif;
+	font-size: 130%;
+	font-weight: normal;
 }
 
 /*.jquery-checkbox {
@@ -344,7 +461,7 @@ div.section#quiz #quiz-answers li .selected { cursor: default; }
 .selected .jquery-checkbox, .selected label, .selected input { cursor: default; }
 .jquery-checkbox .mark {display: inline;}
 
-.jquery-checkbox img {vertical-align: middle; width: 40px; height: 40px;}
+.jquery-checkbox img {vertical-align: top; width: 40px; height: 40px;}
 .jquery-checkbox img{background: transparent url(../images/checkbox-sprite.png) no-repeat;}
 
 .jquery-checkbox img{

@@ -38,11 +38,19 @@
 <body>
 
   <div id="container">
+		<nav id="topnav">
+			<div id="social">
+				<div id="facebook"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=129663287122703&amp;xfbml=1"></script><fb:like href="http://beyondthedebtceiling.us" send="true" layout="button_count" width="100" show_faces="false" font=""></fb:like></div>
+				<div id="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+				<div id="google"><g:plusone size="medium"></g:plusone></div>
+			</div>
+			<div id="bigbuttons">
+				<a href="#do-something-about-it">Do something about it!</a>
+			</div>
+		</nav>
     <header>
 			<img id="logo" src="$ThemeDir/images/dc-logo.png" width="150" height="150" />
 			<h1>Beyond the<br /><strong>Debt Ceiling</strong></h1>
-			<!-- <p id="intro-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis mauris at eros porta aliquet. Vivamus vel diam et lorem faucibus iaculis ut a nunc. Nunc tincidunt, lectus vitae ultricies euismod, arcu lectus adipiscing turpis, at volutpat magna nibh ut turpis.</p> -->
     </header>
     <div id="main" role="main">
 			<div class="section clearfix" id="quiz">
@@ -52,26 +60,31 @@
 					<div id="quiz-answers">
 						<form>
 							<ul id="quiz-options">
-								<li class="quiz-option"><input name="quiz-option" id="quiz-option1" value="1" type="radio"> <label for="quiz-option1">Absolutely nothing.</label></li>
 								<li class="quiz-option"><input name="quiz-option" id="quiz-option2"  value="2" type="radio"> <label for="quiz-option2">America will be back on the right track to fiscal responsibility.</label></li>
 							<li class="quiz-option"><input name="quiz-option" id="quiz-option3"  value="3" type="radio"> <label for="quiz-option3">Locusts, plagues, four horsemen, the whole drill.</label></li>
-							<li class="quiz-option"><input name="quiz-option" id="quiz-option4"  value="4" type="radio">	 <label for="quiz-option4">The U.S. will fall deeper into economic decline.</label></li>			
+							<li class="quiz-option"><input name="quiz-option" id="quiz-option4"  value="4" type="radio">	 <label for="quiz-option4">The U.S. will fall deeper into economic decline.</label></li>
+							<li class="quiz-option"><input name="quiz-option" id="quiz-option1" value="1" type="radio"> <label for="quiz-option1">Absolutely nothing.</label></li>	
 							<li class="quiz-option"><input name="quiz-option" id="quiz-option5"  value="5" type="radio">	 <label for="quiz-option5">I don't really know.</label></li>			
 						</form>
 				<div class="hidden quiz-answer" id="quiz-answer1">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Hmm. Really?? I’m going to have to disagree with you.  If our congress fails to raise our debt-limit (the amount money the U.S. Government is allowed to borrow), our country will “default” on its debts, meaning it won’t be able to pay its bills. Unless you’re a back-to-lander who lives off the grid (and you probably aren’t because you’re using the internet), the fallout of a U.S. Government credit market default will reach you.  And you probably won’t like it.</p>
+						<p>Allow me to explain. The U.S. government’s creditworthiness serves as a foundation for cost of living and the cost of doing business anywhere we spend American dollars.  The cost of any American’s mortgage, credit card or business loan, for example, is financially linked to our government’s credit rating. We’ve been told in no uncertain terms by the credit rating agencies that IF the U.S. Government defaults, they will downgrade its credit rating. Doing so would make the U.S. Government’s cost of doing business go up, and likely also make your cost of living and doing business go up.</p>
+						<p>So, at the very least, its safe to assume that SOMETHING will happen, and you will feel it.</p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer2">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>I think I understand where you’re coming from&hellip;  Can I assume you oppose raising the debt limit because you believe the U.S. Government has borrowed too much money already? You’re thinking enough is enough, am I right? I can certainly empathize with that position.  Our country is deeply in debt.</p>
+					<p>At the same time, I must point out that failing to raise the debt limit at this point in time (especially in light of the economic recession and recovery) will likely be counter-productive toward the goal of wrangling the debt under control.  Put simply, not borrowing a little more money right now risks damaging the U.S. Economy during a delicate recovery.  Whereas if we safeguard the economy until its healthy, we’ll be in a much better financial position to really deal with the debt and balance the budget. And balancing the budget it really what’ll solve our long-term debt problems, not refusing to raise the debt limit.</p>
+					<p>We would also like to mention that the last time the U.S. Government didn’t run an annual deficit was under the Clinton Administration. Clinton is on record as saying, ‘the United States should continue to balance its books and pay off the debt entirely’.</p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer3">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Haha. Well, I suppose if the armageddon arrives you won’t be caught by surprise. But even if it’s not the end of the world, it could still be pretty bad. Here’s why. 
+					</p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer4">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Yeah, you know, honestly this is the most likely result. Assuming you’d like to avoid that scenario, consider contacting your legislator and telling them you support raising the debt limit. You may like to reference our fact sheets when telling them why.</p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer5">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>That's ok.</p>
 				</div>
 				</div>
 				</div>
@@ -79,18 +92,18 @@
 			<div id="story">
 				<div class="section clearfix" id="average-american">
 					<h2>What does this mean for the average American?</h2>
+					<div class="quote"><blockquote>It would not surprise me if [interest rates] went up 5 percent because this would be a serious violation of a premise that's been in the financial markets for a long, long time.</blockquote>
+					<p>&mdash; Mac Clouse, professor of finance at the University of Denver. [citation]</p></div>
 					<p><strong>Nearly half of all government checks won't get paid.</strong> That means that people depend on those checks &mdash; including active-duty soldiers, veterans, federal workers, and citizens waiting for tax refunds &mdash; may be out of luck. [citation]</p>
-					<p><strong>Credit card &amp; auto loan interest rates would raise.</strong> Because the nation wouldn't have enough cash to pay its creditors, global financial ratings services would downgrade America's current top-notch AAA rating, which would likely translate to increased interest rates, higher fees, and market that makes credit harder to come by. [citation]
-						<blockquote>It would not surprise me if [interest rates] went up 5 percent because this would be a serious violation of a premise that's been in the financial markets for a long, long time.</blockquote>
-						<p>&mdash; Mac Clouse, professor of finance at the University of Denver. [citation]</p>
+					<p><strong>Credit card &amp; auto loan interest rates would rise.</strong> Because the nation wouldn't have enough cash to pay its creditors, global financial ratings services would downgrade America's current top-notch AAA rating, which would likely translate to increased interest rates, higher fees, and market that makes credit harder to come by. [citation]
 					</p>
 				</div>
 				<div class="section clearfix" id="long-term">
 					<h2>What about the long-term costs?</h2>
+					<div class="quote left"><blockquote>"If foreigners began curtailing their investment in Treasuries as a result of a default, Treasury rates, and thus Treasury’s borrowing costs, would undoubtedly rise. A sustained 50 basis point increase in Treasury rates would eventually cost U.S. taxpayers an additional <strong>$75 billion</strong> each year."</blockquote>
+					<p>&mdash; Matthew E. Zames, a managing director at JPMorgan Chase and the chairman of the Treasury Borrowing Advisory Committee [citation].</p></div>
 					<p>It's difficult to predict the exact economic repercussions if debt ceiling isn't raised, but it's <strong>likely to end up costing the U.S. money in the long run.</strong></p>
 					<p>Recently, Portugal voted against legislation that was necessary to avoid a European Union bail-out. The effect was similar &mdash; because it effected the country's credit rating, Portuguese borrowing costs skyrocketed. They will likely still have to pass similar legislation, and in the meantime it has cost Portuguese taxpayers about &euro;15,710,000 &mdash; about 22 million U.S. dollars. [citation]</p>
-					<blockquote>"If foreigners began curtailing their investment in Treasuries as a result of a default, Treasury rates, and thus Treasury’s borrowing costs, would undoubtedly rise. A sustained 50 basis point increase in Treasury rates would eventually cost U.S. taxpayers an additional <strong>$75 billion</strong> each year."</blockquote>
-					<p>&mdash; Matthew E. Zames, a managing director at JPMorgan Chase and the chairman of the Treasury Borrowing Advisory Committee [citation].
 				</div>
 				<div class="section clearfix" id="global">
 					<img src="$ThemeDir/images/illustrations-global.png" width="200" height="200" style="float: right">
@@ -106,11 +119,11 @@
 			<div class="section clearfix" id="do-something-about-it">
 				<div id="contact">
 					<div id="zip-form">
+						<label for="zip">Your zip code</label>
 						<input type="text" value="" placeholder="zipcode" id="zip" name="zip" maxlength="5">
-						<label for="zip">Enter your zip code here.</label>
 					</div>
 					<h1>Contact your representatives</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Let your elected representatives know that it's important to you to raise the debt ceiling.</p>
 					<ul id="reps">
 						
 					</ul>
@@ -134,6 +147,7 @@
   <% require javascript(congressapi/javascript/sl-congress-api.js) %>
   <% require javascript(themes/debtceiling/js/libs/jquery.cookie.js) %>
   <% require javascript(themes/debtceiling/js/libs/underscore-min.js) %>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
   <!-- scripts concatenated and minified via ant build script-->
   <% require javascript(themes/debtceiling/js/plugins.js) %>
   <% require javascript(themes/debtceiling/js/script.js) %>
