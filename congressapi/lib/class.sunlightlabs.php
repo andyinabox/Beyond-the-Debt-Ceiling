@@ -221,7 +221,11 @@ class SunlightLegislator extends SunlightData {
 			
 		$qs = $this->_glue( $zip );
 		$data = $this->_request( $this->request_url . 'legislators.allForZip.' . $this->type . $qs );
-		return (object) $data->response->legislators;
+		if(is_object($data) && is_object($data->response)) {
+			return (object) $data->response->legislators;
+		} else {
+			return new stdClass();
+		}
 	}
 }
 

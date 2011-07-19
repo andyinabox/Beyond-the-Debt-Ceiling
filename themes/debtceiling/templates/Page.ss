@@ -6,13 +6,15 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-
+	<% base_tag %>
   <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>$Title</title>
   $MetaTags(false)
+  
+  <% baseHref=
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,6 +40,7 @@
 <body>
 
   <div id="container">
+  		$Form
 		<nav id="topnav">
 			<div id="social">
 				<div id="facebook"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=129663287122703&amp;xfbml=1"></script><fb:like href="http://beyondthedebtceiling.us" send="true" layout="button_count" width="100" show_faces="false" font=""></fb:like></div>
