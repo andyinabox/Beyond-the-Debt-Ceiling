@@ -74,7 +74,7 @@
 							<li class="quiz-option"><input name="quiz-option" id="quiz-option5"  value="5" type="radio">	 <label for="quiz-option5">I don't really know.</label></li>			
 						</form>
 				<div class="hidden quiz-answer" id="quiz-answer1">
-					<p>If our congress fails to raise our debt limit (the amount money the U.S. Government is allowed to borrow), our country will default on its debts, meaning it won’t be able to pay its bills. This combined with the fact that the world economic system is centered around the U.S. means that global market will certainly be effected. While it's difficult to predict <em>exactly what</em> will happen, its safe to assume that <em>something</em> will happen, and you will probably feel it.</p>
+					<p>If our congress fails to raise our debt limit (the amount of money the U.S. Government is allowed to borrow), our country will default on its debts, meaning it won’t be able to pay its bills. This combined with the fact that the world economic system is centered around the U.S. means that global market will certainly be effected. While it's difficult to predict <em>exactly what</em> will happen, its safe to assume that <em>something</em> will happen, and you will probably feel it.</p>
 					<p><a class="learn-more" href="#story">Learn more</a></p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer2">
