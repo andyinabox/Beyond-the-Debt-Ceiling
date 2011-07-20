@@ -173,6 +173,11 @@ $(document).ready(function() {
 		}
 	});
 	
+	$('input#zip').blur(function(e) {
+		if($.cookie('btdcz') != $(this).val()) {
+			dc.reps.getReps($(this).val());
+		}
+	});
 });
 
 
