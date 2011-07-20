@@ -174,7 +174,9 @@ $(document).ready(function() {
 	});
 	
 	$('input#zip').blur(function(e) {
-		dc.reps.getReps($(this).val());
+		if($.cookie('btdcz') != $(this).val()) {
+			dc.reps.getReps($(this).val());
+		}
 	});
 });
 
