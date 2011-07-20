@@ -224,6 +224,11 @@ nav#topnav {
 	}
 }
 
+a.citation {
+/*	vertical-align: super;
+	font-size: 80%;*/
+}
+
 #bigbuttons a:hover {
 	background: #c46262 url(../images/red_paper.jpg);	
 }
