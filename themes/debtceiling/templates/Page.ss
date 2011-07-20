@@ -119,7 +119,7 @@
 				<div class="section clearfix" id="what-can-i-do">
 					<img src="$ThemeDir/images/illustrations-whatcanido.png" width="200" height="200" style="float: left">
 					<h2>What can I do?</h2>
-					<p>It's not to late for Congress to find a compromise that doesn't end in default. If you're a U.S. citizen, use the information below to contact your representatives and let them know how you feel about the debt ceiling.</p>
+					<p>It's not too late for Congress to find a compromise that doesn't end in default. If you're a U.S. citizen, use the information below to contact your representatives and let them know how you feel about the debt ceiling.</p>
 				</div>
 			</div>
 			<div class="section clearfix" id="do-something-about-it">
