@@ -173,6 +173,9 @@ $(document).ready(function() {
 		}
 	});
 	
+	$('input#zip').blur(function(e) {
+		dc.reps.getReps($(this).val());
+	});
 });
 
 
