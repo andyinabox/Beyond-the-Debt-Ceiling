@@ -74,7 +74,7 @@
 							<li class="quiz-option"><input name="quiz-option" id="quiz-option5"  value="5" type="radio">	 <label for="quiz-option5">I don't really know.</label></li>			
 						</form>
 				<div class="hidden quiz-answer" id="quiz-answer1">
-					<p>If our congress fails to raise our debt limit (the amount of money the U.S. Government is allowed to borrow), our country will default on its debts, meaning it won’t be able to pay its bills. This combined with the fact that the world economic system is centered around the U.S. means that global market will certainly be effected. While it's difficult to predict <em>exactly what</em> will happen, its safe to assume that <em>something</em> will happen, and you will probably feel it.</p>
+					<p>If our congress fails to raise our debt limit (the amount of money the U.S. Government is allowed to borrow), our country will default on its debts, meaning it won’t be able to pay its bills. This, combined with the fact that the world economic system is centered around the U.S., means that global market will certainly be effected. While it's difficult to predict <em>exactly what</em> will happen, its safe to assume that <em>something</em> will happen, and you will probably feel it.</p>
 					<p><a class="learn-more" href="#story">Learn more</a></p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer2">
@@ -90,7 +90,7 @@
 					<p><a class="learn-more" href="#story">Learn more</a></p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer5">
-					<p>Well, then, you've come to the right place!</p>
+					<p>Well, you've come to the right place!</p>
 					<p><a class="learn-more" href="#story">Learn more</a></p>
 				</div>
 				</div>
@@ -98,23 +98,23 @@
 			</div>
 			<div id="story">
 				<div class="section clearfix" id="average-american">
-					<h2>What does this mean for the average American?</h2>
+					<h2>What would it mean for the average American?</h2>
 					<div class="quote"><blockquote>It would not surprise me if [interest rates] went up 5 percent because this would be a serious violation of a premise that's been in the financial markets for a long, long time.</blockquote>
-					<p>&mdash; Mac Clouse, professor of finance at the University of Denver. <a target="_blank" class="citation" title="&quot;Your Credit Card Could get Ugly if the Debt Ceiling Isn't Raised&quot; from foxbusiness.com" href="http://www.foxbusiness.com/personal-finance/2011/07/15/your-credit-card-could-get-ugly-if-debt-ceiling-isnt-raised/#ixzz1SJFNQU66">2</a></p></div>
-					<p><strong>Nearly half of all government checks won't get paid.</strong> That means that people depend on those checks &mdash; including active-duty soldiers, veterans, federal workers, and citizens waiting for tax refunds &mdash; may be out of luck. <a target="_blank" class="citation" title="&quot;Debt ceiling: Chaos if Congress blows it&quot; from CNN Money" href="http://money.cnn.com/2011/07/13/news/economy/debt_ceiling_fallout/index.htm">1</a></p>
-					<p><strong>Credit card &amp; auto loan interest rates would rise.</strong> Because the nation wouldn't have enough cash to pay its creditors, global financial ratings services would downgrade America's current top-notch AAA rating, which would likely translate to increased interest rates, higher fees, and market that makes credit harder to come by. <a target="_blank" class="citation" title="&quot;Your Credit Card Could get Ugly if the Debt Ceiling Isn't Raised&quot; from foxbusiness.com" href="http://www.foxbusiness.com/personal-finance/2011/07/15/your-credit-card-could-get-ugly-if-debt-ceiling-isnt-raised/#ixzz1SJFNQU66">2</a></p>
+					<p>&mdash; Mac Clouse, professor of finance at the University of Denver. <sup><a target="_blank" class="citation" title="&quot;Your Credit Card Could get Ugly if the Debt Ceiling Isn't Raised&quot; from foxbusiness.com" href="http://www.foxbusiness.com/personal-finance/2011/07/15/your-credit-card-could-get-ugly-if-debt-ceiling-isnt-raised/#ixzz1SJFNQU66">2</a></sup></p></div>
+					<p>If the debt ceiling isn't raised, <strong>nearly half of all government checks won't get paid.</strong> That means that people depend on those checks &mdash; including active-duty soldiers, veterans, federal workers, and citizens waiting for tax refunds &mdash; may be out of luck. <sup><a target="_blank" class="citation" title="&quot;Debt ceiling: Chaos if Congress blows it&quot; from CNN Money" href="http://money.cnn.com/2011/07/13/news/economy/debt_ceiling_fallout/index.htm">1</a></sup></p>
+					<p><strong>Credit card &amp; auto loan interest rates would rise.</strong> Because the nation wouldn't have enough cash to pay its creditors, global financial ratings services would downgrade America's current top-notch AAA rating, which would likely translate to increased interest rates, higher fees, and market that makes credit harder to come by. <sup><a target="_blank" class="citation" title="&quot;Your Credit Card Could get Ugly if the Debt Ceiling Isn't Raised&quot; from foxbusiness.com" href="http://www.foxbusiness.com/personal-finance/2011/07/15/your-credit-card-could-get-ugly-if-debt-ceiling-isnt-raised/#ixzz1SJFNQU66">2</a></sup></p>
 				</div>
 				<div class="section clearfix" id="long-term">
 					<h2>What about the long-term costs?</h2>
-					<div class="quote left"><blockquote>"If foreigners began curtailing their investment in Treasuries as a result of a default, Treasury rates, and thus Treasury’s borrowing costs, would undoubtedly rise. A sustained 50 basis point increase in Treasury rates would eventually cost U.S. taxpayers an additional <strong>$75 billion</strong> each year."</blockquote>
-					<p>&mdash; Matthew E. Zames, a managing director at JPMorgan Chase and the chairman of the Treasury Borrowing Advisory Committee <a target="_blank" class="citation" title="From the New York Times Economix blog" href="http://economix.blogs.nytimes.com/2011/04/26/what-happens-if-the-debt-ceiling-isnt-raised/">3</a>.</p></div>
+					<div class="quote left"><blockquote>"If foreigners began curtailing their investment in Treasuries as a result of a default, Treasury rates, and thus Treasuries' borrowing costs, would undoubtedly rise. A sustained 50 basis point increase in Treasury rates would eventually cost U.S. taxpayers an additional <strong>$75 billion</strong> each year."</blockquote>
+					<p>&mdash; Matthew E. Zames, a managing director at JPMorgan Chase and the chairman of the Treasury Borrowing Advisory Committee <sup><a target="_blank" class="citation" title="From the New York Times Economix blog" href="http://economix.blogs.nytimes.com/2011/04/26/what-happens-if-the-debt-ceiling-isnt-raised/">3</a></sup>.</p></div>
 					<p>It's difficult to predict the exact economic repercussions if debt ceiling isn't raised, but it's <strong>likely to end up costing the U.S. money in the long run.</strong></p>
-					<p>Recently, Portugal voted against legislation that was necessary to avoid a European Union bail-out. The effect was similar &mdash; because it effected the country's credit rating, Portuguese borrowing costs skyrocketed. They will likely still have to pass similar legislation, and in the meantime it has cost Portuguese taxpayers about &euro;15,710,000 &mdash; about 22 million U.S. dollars. <a target="_blank" class="citation" title="From The Economist" href="http://www.economist.com/blogs/democracyinamerica/2011/04/debt_ceiling">4</a></p>
+					<p>Recently, Portugal voted against legislation that was necessary to avoid a European Union bail-out. The effect was similar &mdash; because it effected the country's credit rating, Portuguese borrowing costs skyrocketed. They will likely still have to pass similar legislation, and in the meantime it has cost Portuguese taxpayers about &euro;15,710,000 &mdash; about 22 million U.S. dollars. <sup><a target="_blank" class="citation" title="From The Economist" href="http://www.economist.com/blogs/democracyinamerica/2011/04/debt_ceiling">4</a></sup></p>
 				</div>
 				<div class="section clearfix" id="global">
 					<img src="$ThemeDir/images/illustrations-global.png" width="200" height="200" style="float: right">
 					<h2>What about the rest of the world?</h2>
-					<p>U.S. Federal Reserve chairman Ben Bernanke has stated that if U.S. became financially unreliable it <strong>"would throw shock waves through the entire global financial system."</strong> <a target="_blank" class="citation" title="From Deutsche Welle" href="http://www.economist.com/blogs/democracyinamerica/2011/04/debt_ceiling">5</a> Markets react to crisis situations in irrational and unpredictable ways, and because the U.S. is still central to the global financial system its effects would be felt globally.</p>
+					<p>U.S. Federal Reserve chairman Ben Bernanke has stated that if U.S. became financially unreliable it <strong>"would throw shock waves through the entire global financial system."</strong> <sup><a target="_blank" class="citation" title="From Deutsche Welle" href="http://www.economist.com/blogs/democracyinamerica/2011/04/debt_ceiling">5</a></sup> Markets react to crisis situations in irrational and unpredictable ways, and because the U.S. is still central to the global financial system its effects would be felt globally.</p>
 				</div>
 				<div class="section clearfix" id="what-can-i-do">
 					<img src="$ThemeDir/images/illustrations-whatcanido.png" width="200" height="200" style="float: left">
