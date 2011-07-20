@@ -1,9 +1,9 @@
 <!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
 	<% base_tag %>
@@ -11,11 +11,17 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>$Title</title>
+  <title>Beyond the Debt Ceiling</title>
   $MetaTags(false)
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Beyond the Debt Ceiling"/>
+  <meta property="og:url" content="http://beyondthedebtceiling.us/"/>
+  <meta property="og:image" content="http://beyondthedebtceiling.us/themes/debtceiling/images/dc-logo.png"/>
+  <meta property="og:site_name" content="Beyond the Debt Ceiling"/>
+  <meta property="og:description"
+        content="What will happen if the debt ceiling isn't raised? Find out here."/>
 
   <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/$ThemeDir/images/favicon.ico">
@@ -40,8 +46,8 @@
   <div id="container">
 		<nav id="topnav">
 			<div id="social">
-				<div id="facebook"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=129663287122703&amp;xfbml=1"></script><fb:like href="http://beyondthedebtceiling.us" send="true" layout="button_count" width="100" show_faces="false" font=""></fb:like></div>
 				<div id="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+				<div id="facebook"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=129663287122703&amp;xfbml=1"></script><fb:like href="http://beyondthedebtceiling.us/" send="false" layout="button_count" width="50" show_faces="false" font=""></fb:like></div>
 				<div id="google"><g:plusone size="medium"></g:plusone></div>
 			</div>
 			<div id="bigbuttons">
@@ -68,21 +74,24 @@
 							<li class="quiz-option"><input name="quiz-option" id="quiz-option5"  value="5" type="radio">	 <label for="quiz-option5">I don't really know.</label></li>			
 						</form>
 				<div class="hidden quiz-answer" id="quiz-answer1">
-					<p>If our congress fails to raise our debt-limit (the amount money the U.S. Government is allowed to borrow), our country will default on its debts, meaning it won’t be able to pay its bills. This combined with the fact that the world economic system is centered around the U.S. means that global market will certainly be effected. While it's difficult to predict <em>exactly what</em> will happen, its safe to assume that <em>something</em> will happen, and you will probably feel it.</p>
+					<p>If our congress fails to raise our debt limit (the amount money the U.S. Government is allowed to borrow), our country will default on its debts, meaning it won’t be able to pay its bills. This combined with the fact that the world economic system is centered around the U.S. means that global market will certainly be effected. While it's difficult to predict <em>exactly what</em> will happen, its safe to assume that <em>something</em> will happen, and you will probably feel it.</p>
 					<p><a class="learn-more" href="#story">Learn more</a></p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer2">
-					<p>Perhaps assume you oppose raising the debt limit because you believe the U.S. Government has borrowed too much money already? You’re thinking enough is enough, right? The U.S. deficit is certainly worth being concerned about. Unfortunately, failing to raise the debt ceiling right now will almost certainly hurt the U.S. economy more than it helps it &mdash; especially during a delicate recovery.</p>
+					<p>Perhaps you oppose raising the debt limit because you believe the U.S. Government has borrowed too much money already? You're thinking enough is enough, right? The U.S. deficit is certainly worth being concerned about. Unfortunately, failing to raise the debt ceiling right now will almost certainly hurt the U.S. economy more than it helps it &mdash; especially during a delicate recovery.</p>
+					<p><a class="learn-more" href="#story">Learn more</a></p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer3">
-					<p>Haha. Well, if armageddon arrives you won’t be caught by surprise. But even if it’s not the end of the world, it could still be pretty bad. Here’s why. 
-					</p>
+					<p>Haha. Well, if armageddon arrives you won’t be caught by surprise. But even if it’s not the end of the world, it could still be pretty bad. Here’s why.</p>
+					<p><a class="learn-more" href="#story">Learn more</a></p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer4">
 					<p>From the facts at hand, this seems to be the most likely result. Assuming you’d like to avoid that scenario, consider <a href="#do-something-about-it">contacting your legislator</a> and telling them why it's important to you that we raise the debt limit.</p>
+					<p><a class="learn-more" href="#story">Learn more</a></p>
 				</div>
 				<div class="hidden quiz-answer" id="quiz-answer5">
 					<p>Well, then, you've come to the right place!</p>
+					<p><a class="learn-more" href="#story">Learn more</a></p>
 				</div>
 				</div>
 				</div>

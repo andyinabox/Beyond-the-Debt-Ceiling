@@ -208,12 +208,8 @@ nav#topnav {
 	left: 0;
 	right: 0;
 	height: 30px;
-	background: #fff;
-	opacity: 0.9;
-	-moz-opacity: 0.9;
-	filter:alpha(opacity=90);
 	z-index: 69;
-	border-bottom: 1px solid #ddd;
+/*	border-bottom: 1px solid #ddd;*/
 }
 
 #bigbuttons a {
@@ -222,6 +218,10 @@ nav#topnav {
 	text-decoration: none;
 	background: #7c94b8 url(../images/blue_paper.jpg);	
 	line-height: 30px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	}
 }
 
 #bigbuttons a:hover {
@@ -230,8 +230,16 @@ nav#topnav {
 
 div#social {
 	position: absolute;
-	top: 5px;
-	right: 5px;
+	top: 0px;
+	right: 0px;
+	padding: 5px 10px;
+	background: #fff;
+	opacity: 0.8;
+	-moz-opacity: 0.9;
+	filter:alpha(opacity=80);
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 div#social #facebook,
@@ -383,6 +391,10 @@ div.section#quiz #quiz-answers li .selected { cursor: default; }
 
 #story div.section {
 	background: #7c94b8 url(../images/blue_paper.jpg);	
+}
+
+#story #what-can-i-do {
+	background: #c46262 url(../images/red_paper.jpg);		
 }
 
 #do-something-about-it {

@@ -213,7 +213,7 @@ $(document).ready(function() {
 						
 						// show answer
 						answer = $(options.answerIdRoot+vote);
-						if(!answer.is(':visible')) { answer.show('slow'); }
+						if(!answer.is(':visible')) { answer.slideDown('slow'); }
 					} else {
 						e.preventDefault();
 					}
