@@ -4,6 +4,30 @@ class Vote extends DataObject {
 		'Choice' => 'Int',
 		'IP' => 'Text'
 	);
+	
+	/**
+	 * Returns the total times given value was voted on.
+	 *
+	 * @return Number of votes
+	 */
+	static function total_votes($vote) {
+		$query = new SQLQuery(
+			"COUNT(Choice)",
+			"Vote",
+			"Choice=$vote"
+		);
+		return $query->execute()->value();
+	}
+	
+	static function vote_percentage($vote) {
+		$query = new SQLQuery(
+			"COUNT(Choice)",
+			"Vote",
+			"Choice BETWEEN 1 AND 5");
+		$total_all_votes = $query->execute()->value();
+		return self::total_votes($vote)/$total_all_votes;
+	}
+	
 }
 
 class Vote_Controller extends Controller {
@@ -49,7 +73,7 @@ class Vote_Controller extends Controller {
 		protected function add() {
 			if($this->isAjax) {
 				$args = array(
-					'Vote' => Director::urlParam('Vote'),
+					'Choice' => Director::urlParam('Vote'),
 					'IP' => Director::urlParam('IP')
 				);
 			
