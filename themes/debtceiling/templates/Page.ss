@@ -139,7 +139,7 @@
     </div>
 
     <footer>
-			A public service announcement by <a href="The Notion Collective" href="http://notioncollective.com">The Notion Collective</a> &amp; The Marauding Tigers
+			A public service announcement by <a title="The Notion Collective" href="http://notioncollective.com">The Notion Collective</a> &amp; The Marauding Tigers
     </footer>
   </div> <!--! end of #container -->
 
