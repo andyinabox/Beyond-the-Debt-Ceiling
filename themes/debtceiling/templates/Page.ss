@@ -63,7 +63,9 @@
 			<div class="section clearfix" id="quiz">
 				<div id="quiz-question">
 					<h1>What <em>will</em> happen if the debt ceiling isn't raised?</h1>
-					<div id="quiz-illustration"><img src="$ThemeDir/images/illustrations-debtceiling.png" height="200" width="200"></div>
+					<div id="quiz-illustration"><img src="$ThemeDir/images/illustrations-debtceiling.png" height="200" width="200">
+						<div id="quiz-stats"></div>
+					</div>
 					<div id="quiz-answers">
 						<form>
 							<ul id="quiz-options">

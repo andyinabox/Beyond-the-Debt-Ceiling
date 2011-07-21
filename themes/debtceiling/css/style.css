@@ -346,7 +346,7 @@ div.section blockquote {
 
 div.section#quiz {
 	background: #c46262 url(../images/red_paper.jpg);	
-	min-height: 250px;
+	min-height: 330px;
 }
 
 div.section#quiz h1 {
@@ -360,6 +360,40 @@ div.section#quiz #quiz-illustration {
 	left: 50px;
 	top: 80px;
 }
+
+div.section#quiz #quiz-illustration #quiz-stats {
+}
+div.section#quiz #quiz-stats #your-vote {
+	
+}
+div.section#quiz #quiz-stats .percent,
+div.section#quiz #quiz-stats .count {
+	font-weight: bold;
+/*	color: #fff;
+	padding: 0 2px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 2px dotted #fff;*/
+}
+div.section#quiz #quiz-illustration a#change-vote {
+	display: block;
+	text-transform: uppercase;
+	margin-top: 1em;
+	font-size: 80%;
+		padding: 1px 2px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		border: 2px dotted #fff;
+		text-decoration: none;
+	text-align: center;
+}
+
+div.section#quiz #quiz-illustration a#change-vote:hover {
+	background: #ccc url(../images/grey_paper.jpg);
+}
+
 
 div.section#quiz #quiz-answers {
 	margin-left: 220px;

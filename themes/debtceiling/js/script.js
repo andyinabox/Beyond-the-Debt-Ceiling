@@ -121,6 +121,9 @@ var quiz = {
 		$.getJSON('vote/add/'+vote+'/'+ip, function(response) {
 			return response;
 		});
+	},
+	stats: function(callback, vote) {
+		$.getJSON('vote/stats/'+vote, callback);
 	}
 }
 
@@ -201,30 +204,60 @@ $(document).ready(function() {
 				var obj = $(this);
 				var checkbox = $('input:radio', obj);
 				var selected = false;
-												
-				checkbox.click(function(e) {
-					if(!selected) {
-						selected = true;
-						obj.addClass('selected');
-						var vote = $(this).val();
-						if(!$.cookie('ivoted')) {
-							ip.ip(function(response) {
-								quiz.vote(vote, response.ip);
-								$.cookie('ivoted', vote);
-							});											
-						}
-						obj.siblings().hide("fast");
-						
-						// show answer
-						answer = $(options.answerIdRoot+vote);
-						if(!answer.is(':visible')) { answer.slideDown('slow'); }
-					} else {
+				var stats = {};
+				var vote = null;
+				var set_stats = function(response) {
+					stats = response;
+					var html = ""
+					html += "<span class='your-choice'>";
+					html += "<span class='percent'>"+Math.round(response.votePercentage*100)+"%</span> of ";
+					html += "<span class='count'>"+response.allVotesCount+"</span> visitors selected this option.";
+					html += "</span>";
+					html += "<a id='change-vote' href='#'>Change your selection</a>"
+					$('#quiz-stats').append(html);
+					
+					// setup reset button
+					$('#change-vote').click(function(e) {
 						e.preventDefault();
-					}
-				});
-            });
-        }
-    });
+						$(options.answerIdRoot+vote).hide("fast", function() {
+							obj.removeClass('selected');
+							obj.siblings().show("fast");
+						});
+						
+						console.log("reset");
+					});
+				};
+												
+					checkbox.click(function(e) {
+						if(!selected) {
+							selected = true;
+							obj.addClass('selected');
+							vote = $(this).val();
+						
+							// vote
+							// if(!$.cookie('ivoted')) {
+								ip.ip(function(response) {
+									quiz.vote(vote, response.ip);
+									$.cookie('ivoted', vote);
+									stats = quiz.stats(set_stats, vote);
+								});											
+							// }
+							obj.siblings().hide("fast");
+						
+							// show answer
+							answer = $(options.answerIdRoot+vote);
+							if(!answer.is(':visible')) { answer.slideDown('slow'); }
+						} else {
+							e.preventDefault();
+						}
+					});
+					
+        });
+        },
+    		resetVote: function(options) {
+					$('quiz-answer').hide();
+				} 
+			});
      
 })(jQuery);
 

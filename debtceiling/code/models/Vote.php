@@ -107,10 +107,10 @@ class Vote_Controller extends Controller {
 				$vote = Director::urlParam('Vote');
 				if($vote) {
 					$args = array(
-						'Choice' => Director::urlParam('Vote'),
-						'AllVotesCount' => Vote::all_votes_count(),
-						'VoteCount' => Vote::vote_count($vote),
-						'VotePercentage' => Vote::vote_percentage($vote)
+						'choice' => Director::urlParam('Vote'),
+						'allVotesCount' => Vote::all_votes_count(),
+						'voteCount' => Vote::vote_count($vote),
+						'votePercentage' => Vote::vote_percentage($vote)
 					);
 				}	
 				$json = json_encode($args);
