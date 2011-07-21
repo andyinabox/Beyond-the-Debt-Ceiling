@@ -235,13 +235,13 @@ $(document).ready(function() {
 							vote = $(this).val();
 						
 							// vote
-							// if(!$.cookie('ivoted')) {
+							if(!$.cookie('ivoted')) {
 								ip.ip(function(response) {
 									quiz.vote(vote, response.ip);
 									$.cookie('ivoted', vote);
 									stats = quiz.stats(set_stats, vote);
 								});											
-							// }
+							}
 							obj.siblings().hide("fast");
 						
 							// show answer
