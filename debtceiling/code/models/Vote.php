@@ -10,7 +10,7 @@ class Vote extends DataObject {
 	 *
 	 * @return Number of votes
 	 */
-	static function total_votes($vote) {
+	static function vote_count($vote) {
 		$query = new SQLQuery(
 			"COUNT(Choice)",
 			"Vote",
@@ -19,13 +19,16 @@ class Vote extends DataObject {
 		return $query->execute()->value();
 	}
 	
-	static function vote_percentage($vote) {
+	static function all_votes_count() {
 		$query = new SQLQuery(
 			"COUNT(Choice)",
 			"Vote",
 			"Choice BETWEEN 1 AND 5");
-		$total_all_votes = $query->execute()->value();
-		return self::total_votes($vote)/$total_all_votes;
+		return $query->execute()->value();
+	}
+	
+	static function vote_percentage($vote) {
+		return self::vote_count($vote)/self::all_votes_count();
 	}
 	
 }
@@ -46,7 +49,8 @@ class Vote_Controller extends Controller {
 		 * @var array
 		 */
 		public static $allowed_actions = array (
-			'add'
+			'add',
+			'stats'
 		);
 		
 		// below we work out if the page is called as AJAX or as a normal page
@@ -91,6 +95,28 @@ class Vote_Controller extends Controller {
 				return Director::redirect('/');
 			}
 		}
+		
+		/**
+		 * Adds vote to the db.
+		 *
+		 * @return Vote data.
+		 */
+		protected function stats() {
+			// if($this->isAjax) {
+				$args = array();
+				$vote = Director::urlParam('Vote');
+				if($vote) {
+					$args = array(
+						'Choice' => Director::urlParam('Vote'),
+						'AllVotesCount' => Vote::all_votes_count(),
+						'VoteCount' => Vote::vote_count($vote),
+						'VotePercentage' => Vote::vote_percentage($vote)
+					);
+				}	
+				$json = json_encode($args);
+				return $json;
+			// }
+		}	
 }
 	
 ?>
