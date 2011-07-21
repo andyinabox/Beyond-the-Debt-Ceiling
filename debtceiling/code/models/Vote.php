@@ -4,6 +4,20 @@ class Vote extends DataObject {
 		'Choice' => 'Int',
 		'IP' => 'Text'
 	);
+	
+	/**
+	 * Takes a vote value, and calculates what percent of total votes voted
+	 * for that value.
+	 *
+	 * @return Decimal percentage (80% = .8)
+	 */
+	// public function percent($vote) {
+	// 	$query = new SQLQuery(
+	// 		"COUNT()");
+	// 	$query->count()
+	// 	
+	// }
+	
 }
 
 class Vote_Controller extends Controller {
