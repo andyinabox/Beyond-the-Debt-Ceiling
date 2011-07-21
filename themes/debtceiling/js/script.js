@@ -213,7 +213,7 @@ $(document).ready(function() {
 					html += "<span class='percent'>"+Math.round(response.votePercentage*100)+"%</span> of ";
 					html += "<span class='count'>"+response.allVotesCount+"</span> visitors selected this option.";
 					html += "</span>";
-					html += "<a id='change-vote' href='#'>Change your selection</a>"
+					// html += "<a id='change-vote' href='#'>Change your selection</a>"
 					$('#quiz-stats').append(html);
 					
 					// setup reset button
