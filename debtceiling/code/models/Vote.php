@@ -11,12 +11,12 @@ class Vote extends DataObject {
 	 *
 	 * @return Decimal percentage (80% = .8)
 	 */
-	// public function percent($vote) {
-	// 	$query = new SQLQuery(
-	// 		"COUNT()");
-	// 	$query->count()
-	// 	
-	// }
+	public function percent($vote) {
+		// $query = new SQLQuery(
+		// 	"COUNT(Vote)");
+		// $query->count()
+		
+	}
 	
 }
 
@@ -63,7 +63,7 @@ class Vote_Controller extends Controller {
 		protected function add() {
 			if($this->isAjax) {
 				$args = array(
-					'Vote' => Director::urlParam('Vote'),
+					'Choice' => Director::urlParam('Vote'),
 					'IP' => Director::urlParam('IP')
 				);
 			
