@@ -203,7 +203,6 @@ $(document).ready(function() {
 				var selected = false;
 												
 				checkbox.click(function(e) {
-					console.log("click");
 					if(!selected) {
 						selected = true;
 						obj.addClass('selected');

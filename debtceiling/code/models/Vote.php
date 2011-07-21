@@ -6,16 +6,26 @@ class Vote extends DataObject {
 	);
 	
 	/**
-	 * Takes a vote value, and calculates what percent of total votes voted
-	 * for that value.
+	 * Returns the total times given value was voted on.
 	 *
-	 * @return Decimal percentage (80% = .8)
+	 * @return Number of votes
 	 */
-	public function percent($vote) {
-		// $query = new SQLQuery(
-		// 	"COUNT(Vote)");
-		// $query->count()
-		
+	static function total_votes($vote) {
+		$query = new SQLQuery(
+			"COUNT(Choice)",
+			"Vote",
+			"Choice=$vote"
+		);
+		return $query->execute()->value();
+	}
+	
+	static function vote_percentage($vote) {
+		$query = new SQLQuery(
+			"COUNT(Choice)",
+			"Vote",
+			"Choice BETWEEN 1 AND 5");
+		$total_all_votes = $query->execute()->value();
+		return self::total_votes($vote)/$total_all_votes;
 	}
 	
 }
